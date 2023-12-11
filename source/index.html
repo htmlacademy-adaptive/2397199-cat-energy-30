@@ -9,10 +9,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="#" class="logo">
+      <a href="#" class="header_logo">
         <img class="main-header_logo-pictures" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип компании Cat Enerdgy">
-      </a>
-      <a href="#" class="logo">
         <img class="main-header_logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Enerdgy">
       </a>
       <nav class="main-nav">
@@ -35,14 +33,13 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="block-hero">
-        <h1 class="block-hero_title">Функциональное<br>питание для котов</h1>
-        <span class="block-hero-description">Занялся собой? Займись котом!</span>
-        <img src="images/food-jar.png" class="block-hero_images">
-        <button class="block-hero_button" type="button">Подобрать программу</button>
+      <section class="hero">
+        <h1 class="hero_title">Функциональное<br>питание для котов</h1>
+        <span class="hero-description">Занялся собой? Займись котом!</span>
+        <a class="hero_button" type="button">Подобрать программу</a>
       </section>
       <section class="nutrition-programs">
-        <span class="visually-hidden">Программы питания для котов</span>
+        <h2 class="visually-hidden">Программы питания для котов</h2>
         <ul class="nutrition-programs_list">
           <li class="nutrition-programs_item">
             <h3 class="nutrition-programs_title">Похудение</h3>
@@ -68,32 +65,36 @@
           </li>
         </ul>
       </section>
-      <section class="block-advantages">
-        <h2 class="block-advantages_title">Как это работает</h2>
-        <ul class="block-advantages_list">
-          <li class="block-advantages_item">
-            <p class="block-advantages_decription">
+      <section class="advantages">
+        <h2 class="advantages_title">Как это работает</h2>
+        <ul class="advantages_list">
+          <li class="advantages_item">
+            <span class="advantages_icon icon-food"></span>
+            <p class="advantages_decription text">
               Функциональное питание<br>
               содержит только полезные<br>
               питательные вещества.<br>
             </p>
           </li>
-          <li class="block-advantages_item">
-            <p class="block-advantages_decription">
+          <li class="advantages_item">
+            <span class="advantages_icon icon-view"></span>
+            <p class="advantages_decription text">
               Выпускается в виде порошка,<br>
               который нужно лишь залить<br>
               кипятком и готово.<br>
             </p>
           </li>
-          <li class="block-advantages_item">
-            <p class="block-advantages_decription">
+          <li class="advantages_item">
+            <span class="advantages_icon icon-substitution"></span>
+            <p class="advantages_decription text">
               Замените один-два приема<br>
               обычной еды на наше<br>
               функциональное питание.<br>
             </p>
           </li>
-          <li class="block-advantages_item">
-            <p class="block-advantages_decription">
+          <li class="advantages_item">
+            <span class="advantages_icon icon-time"></span>
+            <p class="advantages_decription text">
               Уже через месяц<br>
               наслаждайтесь изменениями<br>
               к лучшему вашего питомца!<br>
@@ -101,9 +102,9 @@
           </li>
         </ul>
       </section>
-      <section class="block-example">
-        <h2 class="block-example_title">Живой пример</h2>
-        <p class="block-example_description">
+      <section class="example">
+        <h2 class="example_title">Живой пример</h2>
+        <p class="example_description text">
           Борис сбросил 5 кг за 2 месяца, просто<br>
           заменив свой обычный корм на Cat Energy<br>
           Slim. Отличный результат без изнуряющих<br>
@@ -111,57 +112,65 @@
           привычек и по-прежнему спит по 16 часов<br>
           в день.
         </p>
-        <fieldset class="block-example_result">
-          <legend>снижение веса</legend>
-          <label>5 кг</label>
-        </fieldset>
-        <fieldset class="block-example_result">
-          <legend>затрачено времени</legend>
-          <label>60 дней</label>
-        </fieldset>
-        <p class="block-example_description-costs">Затраты на питание: 15 000 руб. </p>
+        <ul class="example_list">
+          <li class="example_item">
+            <dt class="example_rumber">снижение веса</dt>
+            <dd class="example_description">5 кг</dd>
+          </li>
+          <li class="example_item">
+            <dt class="example_rumber">затрачено времени</dt>
+            <dd class="example_description">60 дней</dd>
+          </li>
+        </ul>
+        <p class="example_description-costs">Затраты на питание: 15 000 руб. </p>
+        <div class="example-slider">
+          <button class="slider-button" type="button">
+            <span class="visually-hidden">До/после</span>
+          </button>
+          <div class="slider_container-cat-big">
+            <img class="slider_img" src="" alt="Упитанный кот" width="280" height="250">
+          </div>
+          <div class="slider_container-cat-small">
+            <img class="slider_img" src="" alt="Худой кот" width="280" height="250">
+          </div>
+        </div>
       </section>
-      <footer>
-        <section class="block-location">
-          <span class="visually-hidden">Как нас найти?</span>
-          <p class="block-location_description">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-          <p class="block-location_description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
-          <img class="block-location_images" src="images/location.png" width="320" height="362">
-        </section>
-        <section class="block-contacts">
-          <span class="visually-hidden">Контакты Cat Energy</span>
-          <a href="#" class="logo">
-            <img class="main-header_logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип компании Cat Enerdgy">
-          </a>
-          <ul class="block-contacts_list-cat">
-            <li class="block-contacts_item">
-              <a href="#" class="block-contacts_link">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="block-contacts_item">
-              <a href="#" class="block-contacts_link">
-                <span class="visually-hidden">YouTube</span>
-              </a>
-            </li>
-            <li class="block-contacts_item">
-              <a href="#" class="block-contacts_link">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-          </ul>
-          <ul class="block-contacts_list-academy">
-            <li class="block-contacts_item-academy">
-              <a href="#" class="block-contacts_link-academy">HTML Academy</a>
-            </li>
-            <li class="block-contacts_item-academy">
-              <a href="#" class="block-contacts_link-academy">
-                <img class="block-contacts_logo-academy" src="images/logo-html-academy.svg" width="27" height="34">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </footer>
+      <section class="location">
+        <h2 class="visually-hidden">Как нас найти?</h2>
+        <address class="location-address">
+          <p class="location_description">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+          <p class="location_description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        </address>
+        <img class="location_images" src="images/location.png" width="320" height="362">
+      </section>
     </main>
+    <footer class="footer">
+      <span class="visually-hidden">Контакты Cat Energy</span>
+      <a href="#" class="logo">
+        <img class="footer_logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип компании Cat Enerdgy">
+      </a>
+      <ul class="social_list">
+        <li class="social_item">
+          <a href="#" class="social_link">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social_item">
+          <a href="#" class="social_link">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+        <li class="social_item">
+          <a href="#" class="social_link">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+      </ul>
+        <a href="#" class="footer_logo-link">
+          <img class="main-header_logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Enerdgy">
+          <img class="contacts_logo-academy" src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип компании Cat Enerdgy">
+        </a>
+    </footer>
   </body>
+
 </html>
