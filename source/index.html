@@ -5,15 +5,17 @@
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a href="#" class="header_logo">
-        <picture>
           <img class="main-header_logo-pictures" src="images/logo/logotype-mobile.svg" width="33" height="38" alt="Логотип компании Cat Enerdgy">
           <img class="main-header_logo-text" src="images/logo/logo-cat-text.svg" width="101" height="18" alt="Логотип компании Cat Enerdgy">
-        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav_toggle" type="button">
@@ -39,7 +41,12 @@
         <h1 class="hero_title">Функциональное<br>питание для котов</h1>
         <span class="hero-description">Занялся собой? Займись котом!</span>
         <picture>
-
+          <source type="image/webp" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.webp 1x, images/index/index-can-desktop@2x.webp 2x" width="522" height="499">
+          <source type="image/webp" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.webp 1x, images/index/index-can-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" media="(min-width:320px)" srcset="images/index/index-can-mobile@1x.webp 1x, images/index/index-can-mobile@2x.webp 2x" width="280" height="270">
+          <source type="image/png" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.png 1x, images/index/index-can-desktop@2x.png 2x" width="522" height="499">
+          <source type="image/png" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.png 1x, images/index/index-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero_img" src="images/index/index-can-mobile@1x.png" srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание Cat Energy">
         </picture>
         <a class="hero_button" type="button">Подобрать программу</a>
       </section>
@@ -133,10 +140,24 @@
             <span class="visually-hidden">До/после</span>
           </button>
           <div class="slider_container-cat-big">
-            <img class="slider_img" src="" alt="Упитанный кот" width="280" height="250">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 320px)" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@1x.webp 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@1x.png 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@1x.png 2x" width="280" height="256">
+              <img class="slider_img" src="images/index/cat-before-mobile@1x.png" srcset="images/index/cat-before-mobile@2x.png 2x" alt="Упитанный кот" width="280" height="256">
+            </picture>
           </div>
           <div class="slider_container-cat-small">
-            <img class="slider_img" src="" alt="Худой кот" width="280" height="250">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 320px)" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@1x.webp 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@1x.png 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@1x.png 2x" width="280" height="256">
+              <img class="slider_img" src="images/index/cat-after-mobile@1x.png" srcset="images/index/cat-after-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+            </picture>
           </div>
         </div>
       </section>
