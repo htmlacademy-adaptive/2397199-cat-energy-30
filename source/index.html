@@ -5,13 +5,17 @@
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a href="#" class="header_logo">
-        <img class="main-header_logo-pictures" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип компании Cat Enerdgy">
-        <img class="main-header_logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Enerdgy">
+        <img class="main-header_logo-pictures" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+        <img class="main-header_logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav_toggle" type="button">
@@ -23,10 +27,10 @@
               <a href="#">Главная</a>
             </li>
             <li class="site-list_item">
-              <a href="#">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list_item">
-              <a href="#">Подбор программы</a>
+              <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -36,7 +40,15 @@
       <section class="hero">
         <h1 class="hero_title">Функциональное<br>питание для котов</h1>
         <span class="hero-description">Занялся собой? Займись котом!</span>
-        <a class="hero_button" type="button">Подобрать программу</a>
+        <picture>
+          <source type="image/webp" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.webp 1x, images/index/index-can-desktop@2x.webp 2x" width="522" height="499">
+          <source type="image/webp" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.webp 1x, images/index/index-can-tablet@2x.webp 2x" width="709" height="609">
+          <source type="image/webp" media="(min-width:320px)" srcset="images/index/index-can-mobile@1x.webp 1x, images/index/index-can-mobile@2x.webp 2x" width="280" height="270">
+          <source type="image/png" media="(min-width:1440px)" srcset="images/index/index-can-desktop@1x.png 1x, images/index/index-can-desktop@2x.png 2x" width="522" height="499">
+          <source type="image/png" media="(min-width:768px)" srcset="images/index/index-can-tablet@1x.png 1x, images/index/index-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero_img" src="images/index/index-can-mobile@1x.png" srcset="images/index/index-can-mobile@2x.png 2x" width="280" height="270" alt="Питание Cat Energy">
+        </picture>
+        <a class="hero_button" href="form.html">Подобрать программу</a>
       </section>
       <section class="nutrition-programs">
         <h2 class="visually-hidden">Программы питания для котов</h2>
@@ -114,12 +126,12 @@
         </p>
         <ul class="example_list">
           <li class="example_item">
-            <dt class="example_rumber">снижение веса</dt>
-            <dd class="example_description">5 кг</dd>
+            <p class="example_rumber">снижение веса</p>
+            <span class="example_description">5 кг</span>
           </li>
           <li class="example_item">
-            <dt class="example_rumber">затрачено времени</dt>
-            <dd class="example_description">60 дней</dd>
+            <p class="example_rumber">затрачено времени</p>
+            <span class="example_description">60 дней</span>
           </li>
         </ul>
         <p class="example_description-costs">Затраты на питание: 15 000 руб. </p>
@@ -128,10 +140,24 @@
             <span class="visually-hidden">До/после</span>
           </button>
           <div class="slider_container-cat-big">
-            <img class="slider_img" src="" alt="Упитанный кот" width="280" height="250">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 320px)" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@1x.webp 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@1x.png 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@1x.png 2x" width="280" height="256">
+              <img class="slider_img" src="images/index/cat-before-mobile@1x.png" srcset="images/index/cat-before-mobile@2x.png 2x" alt="Упитанный кот" width="280" height="256">
+            </picture>
           </div>
           <div class="slider_container-cat-small">
-            <img class="slider_img" src="" alt="Худой кот" width="280" height="250">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@1x.webp 2x" width="560" height="512">
+              <source type="image/webp" media="(min-width: 320px)" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@1x.webp 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@1x.png 2x" width="560" height="512">
+              <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@1x.png 2x" width="280" height="256">
+              <img class="slider_img" src="images/index/cat-after-mobile@1x.png" srcset="images/index/cat-after-mobile@2x.png 2x" alt="Худой кот" width="280" height="256">
+            </picture>
           </div>
         </div>
       </section>
@@ -141,13 +167,12 @@
           <p class="location_description">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
           <p class="location_description">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
         </address>
-        <img class="location_images" src="images/location.png" width="320" height="362">
+        <img class="location_images" src="images/location.png" width="320" height="362" alt="Карта местоположения">
       </section>
     </main>
     <footer class="footer">
-      <span class="visually-hidden">Контакты Cat Energy</span>
       <a href="#" class="logo">
-        <img class="footer_logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип компании Cat Enerdgy">
+        <img class="footer_logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип компании Cat Energy">
       </a>
       <ul class="social_list">
         <li class="social_item">
@@ -166,10 +191,10 @@
           </a>
         </li>
       </ul>
-        <a href="#" class="footer_logo-link">
-          <img class="main-header_logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Enerdgy">
-          <img class="contacts_logo-academy" src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип компании Cat Enerdgy">
-        </a>
+      <a href="#" class="footer_logo-link">
+        <img class="main-header_logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Energy">
+        <img class="contacts_logo-academy" src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип компании HTML Academy">
+      </a>
     </footer>
   </body>
 
