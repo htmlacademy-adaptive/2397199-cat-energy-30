@@ -1,0 +1,32 @@
+.product-card__list {
+    list-style-type: none;
+}
+
+.product-card__link {
+    text-decoration: none;
+}
+
+.product-card__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #222222;
+    text-transform: uppercase;
+}
+
+.card-table__parametr {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $secondary-color;
+}
+
+.card-table__value {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: $secondary-color;
+}

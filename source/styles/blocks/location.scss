@@ -1,0 +1,20 @@
+.location-address {
+    font-style: normal;
+}
+
+.location__description-invitation {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #111111;
+    text-transform: uppercase;
+}
+
+.location__description-address {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $secondary-color;
+}

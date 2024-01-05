@@ -1,0 +1,17 @@
+.main-nav__list {
+    list-style-type: none;
+}
+
+.site-list__item {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.site-list__link {
+    color: $primary-color;   
+    text-decoration: none;
+}
