@@ -7,7 +7,7 @@
 }
 
 .product-card__title {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -16,7 +16,7 @@
 }
 
 .card-table__parametr {
-    font-family: "Lato", "Arial", sans-serif;
+    font-family: $secondary-font;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -24,7 +24,7 @@
 }
 
 .card-table__value {
-    font-family: "Lato", "Arial", sans-serif;
+    font-family: $secondary-font;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
