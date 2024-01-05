@@ -1,9 +1,15 @@
+.main-nav__toggle {
+    background-image: url("../../../build/images/icons/stack.svg#icon-open-nav");
+    width: 24px;
+    height: 24px;
+}
+
 .main-nav__list {
     list-style-type: none;
 }
 
 .site-list__item {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;

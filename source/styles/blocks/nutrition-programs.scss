@@ -7,15 +7,16 @@
 }
 
 .nutrition-programs__title {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     font-size: 24px;
     font-weight: 400;
     line-height: 37px;
     color: $primary-color;
+    text-transform: uppercase;
 }
 
 .nutrition-programs__link {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: $primary-font;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
@@ -23,3 +24,21 @@
     text-transform: uppercase;
     color: $primary-color;
 }
+
+.nutrition-programs__title--slim::before {
+    @include bg-icon(
+        transparent,
+        url("../../images/icons/slim-cat.svg"),
+        100%
+    );
+}
+
+.nutrition-programs__title--mass {
+    @include bg-icon(
+        transparent,
+        url("../../images/icons/wild-cat.svg"),
+        100%
+    );
+}
+
+
