@@ -26,19 +26,11 @@
 }
 
 .nutrition-programs__title--slim::before {
-    @include bg-icon(
-        transparent,
-        url("../../images/icons/slim-cat.svg"),
-        100%
-    );
+    @include bg-icon(transparent, url("../../images/icons/slim-cat.svg"),100%);
 }
 
 .nutrition-programs__title--mass {
-    @include bg-icon(
-        transparent,
-        url("../../images/icons/wild-cat.svg"),
-        100%
-    );
+    @include bg-icon(transparent, url("../../images/icons/wild-cat.svg"), 100%);
 }
 
 
