@@ -1,19 +1,23 @@
 .hero {
-    background-color: $bg-primary-color;
+	background-color: $bg-primary-color;
 }
 
 .hero__title {
-    font-family: $primary-font;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    color: #ffffff;
+	font-family: $primary-font;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 36px;
+	color: #ffffff;
 }
 
 .hero__description {
-    font-family: $primary-font;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 14px;
-    color: #ffffff;
+	font-family: $primary-font;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 14px;
+	color: #ffffff;
+}
+
+.hero__button {
+	padding: 10px 44px;
 }

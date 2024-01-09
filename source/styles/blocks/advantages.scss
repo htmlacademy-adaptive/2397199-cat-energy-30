@@ -1,12 +1,53 @@
 .advantages__title {
-    font-family: $primary-font;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 40px;
-    color: $primary-color;
+  font-family: $primary-font;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: $primary-color;
 }
 
 .advantages__list {
-    list-style-type: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__icon {
+  background-color: $bg-primary-color;
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+.icon-food::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 28px;
+  @include bg-icon(transparent, url("../../images/icons/stack.svg#sheet"), 100%);
+}
+
+.icon-view::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 29px;
+  @include bg-icon(transparent, url("../../images/icons/stack.svg#glass-of-water"), 100%);
+}
+
+.icon-substitution::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 30px;
+  @include bg-icon(transparent, url("../../images/icons/stack.svg#cutlery"), 100%);
+}
+
+.icon-time::before {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 31px;
+  @include bg-icon(transparent, url("../../images/icons/stack.svg#alarm-clock"), 100%);
 }
 

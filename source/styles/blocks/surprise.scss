@@ -10,3 +10,11 @@
     line-height: 20px;
     color: #ffffff;
 }
+
+.surprise__description--gift::before {
+    content: '';
+    width: 78px;
+    height: 80px;
+    display: block;
+    @include bg-icon(transparent, url("../../images/icons/stack.svg#gift"), 100%);
+}

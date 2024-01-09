@@ -14,3 +14,17 @@
     line-height: 16px;
     color: $secondary-color;
 }
+
+.card-item-other__title-add::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    @include bg-icon(transparent, url("../../images/icons/stack.svg#plus"), 100%);
+}
+
+.card-item-other__button {
+    background-color: $tertiary-color;
+    padding: 10px 95px;
+    color: #444444;
+}

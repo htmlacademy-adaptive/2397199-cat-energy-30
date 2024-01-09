@@ -44,21 +44,21 @@
           программу питания для вашего кота<br>
         </p>
       </header>
-      <form action="" method="post" class="form">
+      <form action="https://echo.htmlacademy.ru/" method="post" class="form">
         <fieldset class="form-cat-info">
           <legend class="visually-hidden">Основные данные о коте</legend>
           <ul class="form-cat-info__list">
             <li class="form-cat-info__item">
               <label class="form-cat-info__label" for="name">Имя:<sup>*</sup></label>
-              <input class="form-cat-info__input" type="text" id="name" placeholder="Барсик" required>
+              <input class="form-cat-info__input form-cat-info__input--name" type="text" id="name" placeholder="Барсик" required>
             </li>
             <li class="form-cat-info__item">
               <label class="form-cat-info__label" for="weight">Вес (кг):<sup>*</sup></label>
-              <input class="form-cat-info__input" type="number" id="weight" placeholder="7" required>
+              <input class="form-cat-info__input form-cat-info__input--weight" type="number" id="weight" placeholder="7" required>
             </li>
             <li class="form-cat-info__item">
               <label class="form-cat-info__label" for="age">Возраст (лет):</label>
-              <input class="form-cat-info__input" type="number" id="age" placeholder="7">
+              <input class="form-cat-info__input form-cat-info__input--age" type="number" id="age" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -66,23 +66,20 @@
           <legend class="visually-hidden">Цель питания</legend>
         <ul class="form-goal__list">
           <li class="form-goal__item">
-            <label class="form-goal__label" for="">
-              <input class="visually-hidden form-goal__input" type="radio" value="losing-weight" name="losing-weight">
-              <span class="form-goal__input"></span>
+            <label class="form-goal__label" for="contactslim">
+              <input class="form-goal__input" type="radio" value="losing-weight" name="target" id="contactslim" checked>
               <span class="form-goal__description">Похудение</span>
             </label>
           </li>
           <li class="form-goal__item">
-            <label class="form-goal__label" for="">
-              <input class="visually-hidden form-goal__input" type="radio" value="mass" name="mass">
-              <span class="form-goal__input"></span>
+            <label class="form-goal__label" for="contactmass">
+              <input class="form-goal__input" type="radio" value="mass" name="target" id="contactmass">
               <span class="form-goal__description">Набор массы</span>
             </label>
           </li>
           <li class="form-goal__item">
-            <label class="form-goal__label" for="">
-              <input class="visually-hidden form-goal__input" type="radio" value="help" name="help">
-              <span class="form-goal__input"></span>
+            <label class="form-goal__label" for="contactknow">
+              <input class="form-goal__input" type="radio" value="help" name="target" id="contactknow">
               <span class="form-goal__description">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
@@ -92,12 +89,12 @@
           <legend class="form-contact-owner__title">Контактные данные (владельца кота)</legend>
           <ul class="form-contact-owner__list">
             <li class="form-contact-owner__item">
-              <label class="form-contact-owner__label" for="email">E-mail:<sup>*</sup></label>
-              <input class="form-contact-owner__input" type="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <label class="form-contact-owner__label form-contact-owner__label--email" for="email">E-mail:<sup>*</sup></label>
+              <input class="form-contact-owner__input form-contact-owner__input--email" type="email" id="email" placeholder="kuklachev@gmail.com" required>
             </li>
             <li class="form-contact-owner__item">
-              <label class="form-contact-owner__label" for="tel">Телефон:<sup>*</sup></label>
-              <input class="form-contact-owner__input" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+              <label class="form-contact-owner__label form-contact-owner__label--tel" for="tel">Телефон:<sup>*</sup></label>
+              <input class="form-contact-owner__input form-contact-owner__input--tel" type="tel" id="tel" placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
@@ -110,35 +107,31 @@
           <ul class="form-other__list">
             <li class="form-other__item">
               <label class="form-other__label">
-                <input class="form-other__input visually-hidden" type="checkbox" name="sugar-substitute" value="sugar-substitute">
-                <span class="form-other__input"></span>
+                <input class="form-other__input" type="checkbox" name="sugar-substitute" value="sugar-substitute">
                 <span class="form-other__description">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form-other__item">
               <label class="form-other__label">
-                <input class="form-other__input visually-hidden" type="checkbox" name="water" value="water">
-                <span class="form-other__input"></span>
+                <input class="form-other__input" type="checkbox" name="water" value="water">
                 <span class="form-other__description">Питьевая вода</span>
               </label>
             </li>
             <li class="form-other__item">
               <label class="form-other__label">
-                <input class="form-other__input visually-hidden" type="checkbox" name="milk" value="milk">
-                <span class="form-other__input"></span>
+                <input class="form-other__input" type="checkbox" name="milk" value="milk">
                 <span class="form-other__description">Молоко</span>
               </label>
             </li>
             <li class="form-other__item">
               <label class="form-other__label">
-                <input class="form-other__input visually-hidden" type="checkbox" name="vitamins" value="vitamins">
-                <span class="form-other__input"></span>
+                <input class="form-other__input" type="checkbox" name="vitamins" value="vitamins">
                 <span class="form-other__description">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <button class="button button--primary">Отправить заявку</button>
+        <button class="button button--send">Отправить заявку</button>
         <p class="form__description">* - Обязательные поля</p>
       </form>
       <section class="location">
@@ -155,23 +148,23 @@
         </a>
         <ul class="social-list">
           <li class="social-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link social-list__link--vk">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link social-list__link--youtube">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link">
+            <a href="#" class="social-list__link social-list__link--telegram">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
         </ul>
         <a href="#" class="footer__logo-link">
-          <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Enerdgy">
+          <span class="footer__logo-link-description">HTML Academy</span>
           <img class="contacts__logo-academy" src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип компании Cat Enerdgy">
         </a>
       </footer>
