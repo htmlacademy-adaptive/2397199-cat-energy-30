@@ -1,12 +1,49 @@
+.form-goal {
+  border: none;
+}
+
 .form-goal__list {
-    list-style-type: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form-goal__description {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secondary-color;
-    text-transform: uppercase;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.form-goal__input {
+	appearance: none;
+	position: relative;
+	display: inline-block;
+	background: transparent;
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+	border-radius: 50%;
+	border: 1px solid #cdcdcd;
+}
+
+.form-goal__input::before {
+	content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+  transition: 0.25s linear transform;
+  transform: translateX(0rem);
+}
+
+.form-goal__input:checked::before {
+	background-color: $bg-primary-color;
+	box-shadow: 0px 1px 3px #0003;
 }
