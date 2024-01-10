@@ -14,10 +14,14 @@
   <body class="page__body">
     <header class="main-header">
       <a href="#" class="main-header__logo">
-        <img class="main-header__logo-pictures" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+        <picture>
+          <source type="image/svg+xml" width="70" height="59" srcset="images/logo/logo-cat-desktop.svg" media="(min-width: 1440px)">
+          <source type="image/svg+xml" width="60" height="50" srcset="images/logo/logo-cat-tablet.svg" media="(min-width: 768px)">
+          <img class="main-header__logo-pictures" src="images/logo-cat-mobile.svg" width="33" height="38" alt="Логотип компании Cat Energy">
+        </picture>
         <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип компании Cat Energy">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -196,6 +200,8 @@
         <img class="contacts__logo-academy" src="images/logo-html-academy.svg" width="27" height="34" alt="Логотип компании Html Academy">
       </a>
     </footer>
+
+    <script src="scripts/index.js"></script>
   </body>
 
 </html>

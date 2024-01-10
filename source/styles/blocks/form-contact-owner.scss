@@ -37,7 +37,7 @@
 
 .form-contact-owner__label--email::before {
 	content: '';
-	position: absolute;
+	position: relative;
 	width: 17px;
 	height: 13px;
 	display: block;
@@ -48,7 +48,7 @@
 
 .form-contact-owner__label--tel::before {
 	content: '';
-	position: absolute;
+	position: relative;
 	width: 15px;
 	height: 15px;
 	display: block;
