@@ -1,3 +1,8 @@
+.nutrition-programs {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
 .nutrition-programs__list {
   list-style-type: none;
 	padding: 0;
@@ -6,18 +11,35 @@
 
 .nutrition-programs__item {
   background-color: $tertiary-color;
+	margin-bottom: 20px;
 }
 
 .nutrition-programs__title {
+	display: inline-block;
+	vertical-align: top;
 	font-family: $primary-font;
 	font-size: 24px;
 	font-weight: 400;
 	line-height: 37px;
 	color: $primary-color;
+	display: inline-block;
 	text-transform: uppercase;
+	margin: 0;
+	margin-top: 30px;
+}
+
+.nutrition-programs__description {
+	margin: 0;
+	padding: 20px 33px 23px 20px;
+	max-width: 280px;
 }
 
 .nutrition-programs__link {
+	display: inline-block;
+	width: 240px;
+	padding-top: 19px;
+	padding-bottom: 22px;
+	margin-left: 20px;
 	font-family: $primary-font;
 	font-size: 16px;
 	font-weight: 400;
@@ -25,27 +47,32 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	color: $primary-color;
+	border-top: 1px solid #e6e6e6;
 }
 
-.nutrition-programs__title--slim::before {
+.nutrition-programs__item--slim::before {
 	content: '';
-	display: block;
+	display: inline-block;
 	width: 50px;
 	height: 53px;
 	@include bg-icon(transparent, url("../../images/icons/stack.svg#domestic-cat"), 100%);
+	margin: 21px 20px 0px 20px;
 }
 
-.nutrition-programs__title--mass::before {
+.nutrition-programs__item--mass::before {
 	content: '';
-	display: block;
+	display: inline-block;
 	width: 67px;
 	height: 50px;
+	padding-left: 15px;
 	@include bg-icon(transparent, url("../../images/icons/stack.svg#wild-cat"), 100%);
+	margin: 24px 11px 0 13px;
 }
 
-.nutrition-programs__link--arrow::before {
+.nutrition-programs__link--arrow::after {
 	content: '';
-	display: block;
+	display: inline-block;
+	padding-left: 15px;
 	width: 24px;
 	height: 12px;
 	@include bg-icon(transparent, url("../../images/icons/stack.svg#arrow"), 100%);

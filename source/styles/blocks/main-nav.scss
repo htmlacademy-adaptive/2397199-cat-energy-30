@@ -1,7 +1,8 @@
 .main-nav {
-  position: relative;
-  width: auto;
-  min-height: 38px;
+  position: absolute;
+  width: 320px;
+  top: 32px;
+  left: 0;
 }
 
 .main-nav__toggle {
@@ -9,6 +10,8 @@
   z-index: 2;
   width: 24px;
   height: 24px;
+  top: -14px;
+  left: 277px;
   border: none;
   cursor: pointer;
   padding: 0;

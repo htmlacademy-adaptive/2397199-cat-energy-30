@@ -1,5 +1,8 @@
 .location-address {
     font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 26px 20px
 }
 
 .location__description-invitation {
@@ -9,6 +12,8 @@
     line-height: 20px;
     color: #111111;
     text-transform: uppercase;
+    margin: 0;
+    width: 168px;
 }
 
 .location__description-address {
@@ -17,4 +22,6 @@
     font-weight: 400;
     line-height: 20px;
     color: $secondary-color;
+    margin: 0;
+    max-width: 111px;
 }
