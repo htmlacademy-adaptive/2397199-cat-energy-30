@@ -1,0 +1,10 @@
+.example-slider {
+  @media (min-width: $tablet-width) {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  @media (min-width: 320px) {
+    
+  }
+}
