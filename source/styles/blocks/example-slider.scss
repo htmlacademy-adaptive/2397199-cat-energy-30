@@ -1,8 +1,17 @@
 .example-slider {
+  position: relative;
+  display: grid;
+  margin: 0 auto;
+  width: 280px;
+  grid-template-columns: 50% 4px 1fr;
+	padding-bottom: 40px;
   background: transparent;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
+    width: 560px;
+		padding: 99px 104px 101px;
+		margin: 0;
     background: linear-gradient(to bottom,
     rgb(255, 255, 255) 35%,
     rgb(234, 234, 234) 35%);
@@ -10,5 +19,89 @@
 
   @media (min-width: $desktop-width) {
     background: none;
+    grid-column: 2;
+		grid-row: 1/5;
+		padding: 0;
   }
+}
+
+.example-slider__container-img {
+  display: flex;
+  overflow: hidden;
+}
+
+.example-slider__container-img--cat-big {
+  justify-content: flex-start;
+}
+
+.example-slider__container-img--cat-small {
+  position: relative;
+  justify-content: flex-end;
+}
+
+.example-slider__img-big-cat {
+  max-width: none;
+}
+
+.example-slider__img-small-cat {
+  max-width: none;
+}
+
+.example-slider__button {
+  position: relative;
+  z-index: 1;
+  width: 4px;
+  min-height: 100%;
+  padding: 0;
+  border-radius: 2px;
+	border: none;
+  background-color: #666666;
+  cursor: ew-resize;
+  transition: background-color 0.1s ease;
+
+  &:hover {
+    background-color: $bg-primary-color;
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+}
+
+.example-slider__icon {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease, border-color 0.2s ease;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 18px;
+		mask-image: url("../../images/icons/stack.svg#arrow-slider");
+		mask-repeat: no-repeat;
+		mask-position: center;
+		background-color: #666666;
+  }
+}
+
+.example-slider__button:hover .example-slider__icon {
+  border-color: $bg-primary-color;
+  transition: border-color 0.3s ease;
+}
+
+.example-slider__button:hover .example-slider__icon::before {
+  background-color: $bg-primary-color;
+  transition: background-color 0.1s ease;
 }

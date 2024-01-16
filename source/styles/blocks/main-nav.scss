@@ -25,9 +25,7 @@
   left: 277px;
   border: none;
   cursor: pointer;
-  padding: 0;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px 0;
   background-color: transparent;
 
   @media (min-width: $tablet-width) {
@@ -36,7 +34,7 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 2px;
   left: 0;
@@ -57,7 +55,7 @@
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 12px;
     display: block;
