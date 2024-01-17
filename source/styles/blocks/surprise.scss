@@ -28,8 +28,8 @@
       rgba(104, 183, 56, 0.85) 100%
     ),
     image-set(
-      url("../../images/catalog/background-surprise-catalog@1x.jpg") 1x,
-      url("../../images/catalog/background-surprise-catalog@2x.jpg") 2x
+      url("../../images/catalog/background-surprise-mobile@1x.jpg") 1x,
+      url("../../images/catalog/background-surprise-mobile@2x.jpg") 2x
     );
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,6 +37,14 @@
 
 	@media (min-width: $tablet-width) {
 		min-height: 200px;
+		background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85) 100%,
+      rgba(104, 183, 56, 0.85) 100%
+    ),
+    image-set(
+      url("../../images/catalog/background-surprise-tablet@1x.jpg") 1x,
+      url("../../images/catalog/background-surprise-tablet@2x.jpg") 2x
+    );
 	}
 }
 
@@ -56,9 +64,8 @@
 		grid-column: 2/3;
 		padding: 0;
 		display: inline-block;
-		position: relative;
-		bottom: 75px;
-		left: 20px;
+		position: absolute;
+		left: 70px;
 		max-width: 162px;
 		max-height: 60px;
 	}
@@ -77,8 +84,8 @@
 		grid-column: 1/2;
 		grid-row: 1/2;
 		margin: 0;
-		position: relative;
-    top: 70px;
-    right: 264px
+		position: absolute;
+    right: 400px;
+		top: -10px;
 	}
 }

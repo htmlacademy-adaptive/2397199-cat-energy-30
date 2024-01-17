@@ -5,6 +5,11 @@
 }
 
 .page__body--index::before {
+
+	@media (min-width: $tablet-width) {
+		display: none;
+	}
+
 	@media (min-width: $desktop-width) {
 		content: "";
 		position: absolute;

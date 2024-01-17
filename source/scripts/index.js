@@ -1,6 +1,5 @@
-// Бургер в навигации
-let navMain = document.querySelector('.main-nav');
-let navToggle = document.querySelector('.main-nav__toggle');
+const navMain = document.querySelector('.main-nav');
+const navToggle = document.querySelector('.main-nav__toggle');
 
 navMain.classList.remove('main-nav--nojs');
 

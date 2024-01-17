@@ -2,7 +2,7 @@
 	padding: 25px 20px 24px;
 
 	@media (min-width: $tablet-width) {
-		padding: 59px 37px 40px;
+		padding: 30px 41px 40px;
 		border: 2px solid #e6e6e6;
 		align-self: flex-end;
 	}
@@ -61,7 +61,7 @@
 }
 
 .card-item-other__button {
-	background-color: $tertiary-color;
+	background-color: $third-color;
 	padding: 10px 95px;
 	color: #444444;
 

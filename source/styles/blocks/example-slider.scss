@@ -11,10 +11,6 @@
   @media (min-width: $tablet-width) {
     width: 560px;
 		padding: 99px 104px 101px;
-		margin: 0;
-    background: linear-gradient(to bottom,
-    rgb(255, 255, 255) 35%,
-    rgb(234, 234, 234) 35%);
   }
 
   @media (min-width: $desktop-width) {
@@ -35,7 +31,6 @@
 }
 
 .example-slider__container-img--cat-small {
-  position: relative;
   justify-content: flex-end;
 }
 

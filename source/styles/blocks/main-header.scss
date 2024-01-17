@@ -1,10 +1,14 @@
 .main-header {
-  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  margin: 13px auto;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 704px;
+    margin: 25px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,12 +18,15 @@
 }
 
 .main-header__logo {
+  display: flex;
   text-decoration: none;
+  justify-content: space-between;
+  min-width: 200px;
+  align-items: center;
 }
 
 .main-header__logo-text {
   vertical-align: super;
-  padding-left: 56px;
 
   @media (min-width: $tablet-width) {
     padding: 5px 13px 10px 13px;
