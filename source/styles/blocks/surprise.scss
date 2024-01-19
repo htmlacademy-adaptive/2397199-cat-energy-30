@@ -3,14 +3,21 @@
 	opacity: 0.85;
 	position: relative;
 	min-height: 290px;
-	margin: 35px 20px 35px;
+	margin: 35px 20px 0;
 
 	@media (min-width: $tablet-width) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		min-height: 200px;
 		align-items: center;
-		margin: 70px 30px 75px;
+		margin: 70px 30px 0;
+	}
+
+	@media (min-width: $desktop-width) {
+		display: inline-block;
+		margin: 0;
+		grid-column: 2;
+		grid-row: 2/3;
 	}
 }
 
@@ -46,6 +53,18 @@
       url("../../images/catalog/background-surprise-tablet@2x.jpg") 2x
     );
 	}
+
+	@media (min-width: $desktop-width) {
+		min-height: 288px;
+		background-image: linear-gradient(
+			rgba(104, 183, 56, 0.85) 100%,
+      rgba(104, 183, 56, 0.85) 100%
+		),
+		image-set(
+      url("../../images/catalog/background-surprise-desktop@1x.jpg") 1x,
+      url("../../images/catalog/background-surprise-desktop@2x.jpg") 2x
+    );
+	}
 }
 
 .surprise__description {
@@ -69,6 +88,12 @@
 		max-width: 162px;
 		max-height: 60px;
 	}
+
+	@media (min-width: $desktop-width) {
+		position: static;
+		padding: 0 42px;
+		text-align: center;
+	}
 }
 
 .surprise__description--gift::before {
@@ -87,5 +112,10 @@
 		position: absolute;
     right: 400px;
 		top: -10px;
+	}
+
+	@media (min-width: $desktop-width) {
+		position: static;
+		margin: 56px auto 46px;
 	}
 }

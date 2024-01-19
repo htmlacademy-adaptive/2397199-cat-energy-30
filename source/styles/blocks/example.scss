@@ -4,8 +4,6 @@
 
 	@media (min-width: $tablet-width) {
 		padding: 0;
-		// margin: 0 auto;
-		// max-width: 708px;
 		background: linear-gradient(to bottom,
     rgb(255, 255, 255) 60%,
     rgb(234, 234, 234) 60%);
@@ -29,14 +27,12 @@
 	color: $primary-color;
 	margin: 0;
 	padding: 25px 0 40px;
-	max-width: 280px;
-	margin: 0 auto;
+	margin: 0;
 
 	@media (min-width: $tablet-width) {
 		font-size: 60px;
 		line-height: 60px;
 		padding: 45px 20px 60px;
-		max-width: 708px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -48,7 +44,7 @@
 }
 
 .example__description {
-	margin: 0 auto;
+	margin: 0;
 	padding-bottom: 20px;
 	max-width: 280px;
 
@@ -58,7 +54,7 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 146px 20px 69px 20px;
+		padding: 146px 0 69px;
 		margin: 0;
 		grid-column: 1;
 		max-width: 433px;
@@ -69,13 +65,11 @@
 .example__list {
 	list-style-type: none;
 	padding: 0;
-	max-width: 280px;
-	margin: 0 auto;
+	margin: 0;
 
 	@media (min-width: $tablet-width) {
 		display: inline-block;
 		padding-left: 20px;
-		max-width: 360px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -179,15 +173,13 @@
 	line-height: 20px;
 	color: $primary-color;
 	text-transform: uppercase;
-	margin: 0 auto;
+	margin: 0;
 	padding: 30px 0 20px;
 	text-align: center;
-	max-width: 280px;
 
 	@media (min-width: $tablet-width) {
 		display: inline-block;
 		font-size: 20px;
-		max-width: 192px;
 		text-align: end;
 		vertical-align: middle;
 		padding: 30px 20px 20px 112px;
@@ -197,7 +189,6 @@
 		padding: 0;
 		padding-bottom: 75px;
 		grid-column: 1;
-		max-width: 350px;
 		text-align: left;
 	}
 }

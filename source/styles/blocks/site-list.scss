@@ -1,13 +1,13 @@
 .site-list {
   position: absolute;
   right: 0;
-  left: 0;
+  left: -220px;
   z-index: 10;
-  display: none;
   background-color: #ffffff;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     position: inherit;
@@ -17,6 +17,7 @@
     background-color: transparent;
     flex-direction: row;
     padding: 0 10px;
+    width: 504px;
   }
 }
 
@@ -54,5 +55,11 @@
     font-size: 20px;
     line-height: 29px;
     color: #ffffff;
+  }
+}
+
+.site-list__link--dark {
+  @media (min-width: $desktop-width) {
+    color: $primary-color;
   }
 }

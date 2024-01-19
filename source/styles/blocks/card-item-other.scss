@@ -6,6 +6,10 @@
 		border: 2px solid #e6e6e6;
 		align-self: flex-end;
 	}
+
+	@media (min-width: $desktop-width) {
+		padding: 30px 36px 40px;
+	}
 }
 
 .card-item-other__title {
@@ -67,5 +71,9 @@
 
 	@media (min-width: $tablet-width) {
 		padding: 10px 80px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 10px 39px;
 	}
 }
