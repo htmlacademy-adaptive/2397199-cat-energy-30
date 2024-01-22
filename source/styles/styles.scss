@@ -4,7 +4,6 @@
 @import "./global/fonts.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
-@import "./global/common.scss";
 @import "./global/button.scss";
 @import "./global/placeholder.scss";
 
@@ -13,18 +12,14 @@
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
-@import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/nutrition-programs.scss";
 @import "./blocks/advantages.scss";
-@import "./blocks/icon-food.scss";
-@import "./blocks/icon-view.scss";
-@import "./blocks/icon-substitution.scss";
-@import "./blocks/icon-time.scss";
 @import "./blocks/text.scss";
 @import "./blocks/example.scss";
 @import "./blocks/example-slider.scss";
 @import "./blocks/location.scss";
+@import "./blocks/location-address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/logo.scss";
@@ -40,9 +35,6 @@
 @import "./blocks/card-table.scss";
 @import "./blocks/card-item-other.scss";
 @import "./blocks/other-product.scss";
+@import "./blocks/other-product-card.scss";
 @import "./blocks/surprise.scss";
-
-
-
-
-
+@import "./blocks/main-container.scss";
