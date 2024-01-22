@@ -1,6 +1,7 @@
 .other-product {
 	background-color: #ffffff;
 	padding: 25px 0 35px;
+	position: relative;
 
 	@media (min-width: $tablet-width) {
 		padding-bottom: 75px;
@@ -19,48 +20,40 @@
 	line-height: 24px;
 	color: $primary-color;
 	background-color: #ffffff;
-	margin: 0 20px 36px 20px;
+	margin: 0;
+	padding: 0 20px 36px 20px;
 	position: relative;
 	z-index: 1;
 	width: fit-content;
-	box-shadow: -20px 0 0 0 #ffffff, 20px 0 0 0 #ffffff;
 
 	@media (min-width: $tablet-width) {
 		font-size: 36px;
 		line-height: 36px;
-		margin: 0 70px 80px;
+		padding: 0 40px 80px;
+		left: 30px;
 	}
 
 	@media (min-width: $desktop-width) {
-		margin: 0 110px;
+		padding: 0 40px 80px;
 		grid-column: 1/-1;
 		grid-row: 1/2;
+		left: 110px;
 	}
 }
 
-.other-product__title::before {
+.other-product::before {
 	content: "";
 	position: absolute;
-	top: 15px;
+	top: 40px;
 	right: 0;
-	width: 100vw;
+	width: 100%;
 	height: 2px;
 	background-color: $bg-primary-color;
-	box-shadow: 100vw 0 0 0 $bg-primary-color;
-	z-index: -1;
-	// right: calc(100vw + 20px);
-}
 
-// .other-product__title::after {
-// 	content: "";
-// 	position: absolute;
-// 	top: 15px;
-// 	right: 0;
-// 	width: 100vw;
-// 	height: 2px;
-// 	background-color: $bg-primary-color;
-// 	left: calc(100vw + 20px);
-// }
+	@media (min-width: $tablet-width) {
+		top: 48px;
+	}
+}
 
 .other-product__list {
 	list-style-type: none;

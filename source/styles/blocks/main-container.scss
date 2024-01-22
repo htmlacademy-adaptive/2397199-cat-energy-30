@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
+		position: relative;
   }
 }
 
@@ -17,8 +18,8 @@
 		position: absolute;
 		width: 720px;
 		height: 694px;
-		right: 231px;
-		top: 0;
+		right: 0;
+		top: -117px;
 		z-index: 1;
 		background-image: linear-gradient(
 				rgba(104, 183, 56, 0.85) 100%,

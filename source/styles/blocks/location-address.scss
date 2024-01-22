@@ -25,6 +25,18 @@
 
 .main-container--catalog .location-address {
 	background-color: #f2f2f2;
+
+	@media (min-width: $desktop-width) {
+		background-color: #ffffff;
+	}
+}
+
+.main-container--form .location-address {
+	background-color: #f2f2f2;
+
+	@media (min-width: $desktop-width) {
+		background-color: #ffffff;
+	}
 }
 
 .location-address__description-invitation {

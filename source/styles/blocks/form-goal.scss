@@ -1,11 +1,40 @@
 .form-goal {
   border: none;
+  margin: 0;
+  padding: 22px 20px 18px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 65px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-right: 110px;
+    display: inline-block;
+    vertical-align: top;
+    width: 565px;
+  }
 }
 
 .form-goal__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    border: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 28px;
+  }
+}
+
+.form-goal__item:not(:last-child) {
+  margin-bottom: 13px;
 }
 
 .form-goal__description {
@@ -15,6 +44,14 @@
   line-height: 18px;
   color: $secondary-color;
   text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 20px;
+  }
 }
 
 .form-goal__input {
@@ -27,6 +64,12 @@
 	vertical-align: middle;
 	border-radius: 50%;
 	border: 1px solid #cdcdcd;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 .form-goal__input::before {
@@ -41,6 +84,13 @@
   left: 8px;
   transition: 0.25s linear transform;
   transform: translateX(0rem);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 10px;
+    left: 10px;
+  }
 }
 
 .form-goal__input:checked::before {

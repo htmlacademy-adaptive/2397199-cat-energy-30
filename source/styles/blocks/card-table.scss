@@ -1,3 +1,11 @@
+.card-table {
+	border-collapse: collapse;
+}
+
+.card-table__stitch {
+	border-bottom: 1px solid #cdcdcd;
+}
+
 .card-table__parametr {
 	font-family: $secondary-font;
 	font-size: 12px;
