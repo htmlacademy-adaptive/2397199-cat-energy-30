@@ -7,6 +7,15 @@
 	color: #ffffff;
 	border: none;
 	text-decoration: none;
+	cursor: pointer;
+	
+	&:hover {
+		background-color:#5EAA2F;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.4);
+	}
 }
 
 .button--catalog {

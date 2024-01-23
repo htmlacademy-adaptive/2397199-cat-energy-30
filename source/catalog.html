@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--catalog">
     <header class="main-header">
       <a href="#" class="main-header__logo">
         <picture>
@@ -26,11 +26,11 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a href="index.html" class="site-list__link site-list__link--dark">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link site-list__link--dark">Каталог продукции</a>
+            <a href="#" class="site-list__link site-list__link--dark site-list__link--current">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a href="form.html" class="site-list__link site-list__link--dark">Подбор программы</a>
@@ -329,7 +329,6 @@
       </ul>
       <a href="#" class="footer__logo-link">
         <span class="footer__logo-link-description">HTML Academy</span>
-        <img class="contacts__logo-academy" src="images/logo/logo-html-academy.svg" width="27" height="34" alt="Логотип компании Html Academy">
       </a>
     </footer>
   </body>

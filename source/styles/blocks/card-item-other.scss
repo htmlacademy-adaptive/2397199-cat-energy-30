@@ -69,6 +69,15 @@
 	padding: 10px 95px;
 	color: #444444;
 
+	&:hover {
+		background-color:#ebebeb;
+	}
+
+	&:active {
+		background-color:#ebebeb;
+		color: $primary-color;
+	}
+
 	@media (min-width: $tablet-width) {
 		padding: 10px 80px;
 	}

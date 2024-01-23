@@ -41,6 +41,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -55,11 +56,73 @@
     font-size: 20px;
     line-height: 29px;
     color: #ffffff;
+
+    &:hover {
+      color: rgba( 255, 255, 255, 0.7);
+    }
+
+    &:disabled {
+      color: rgba( 255, 255, 255,0.2);
+    }
   }
 }
 
 .site-list__link--dark {
   @media (min-width: $desktop-width) {
     color: $primary-color;
+
+    &:hover {
+      color: rgba( 0, 0, 0, 0.5);
+    }
+
+    &:disabled {
+      color: rgba( 0, 0, 0,0.2);
+    }
+  }
+}
+
+.page__body--index .site-list__link--current::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 2px;
+    background-color: $bg-primary-color;
+    bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 72px;
+    background-color: #ffffff;
+  }
+}
+
+.page__body--form .site-list__link--current::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 152px;
+    height: 2px;
+    background-color: $bg-primary-color;
+    bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.page__body--catalog .site-list__link--current::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 153px;
+    height: 2px;
+    background-color: $bg-primary-color;
+    bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
   }
 }

@@ -66,6 +66,10 @@
 	border: 1px solid #cdcdcd;
   margin: 0;
 
+  &:disabled {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     height: 40px;
     width: 40px;

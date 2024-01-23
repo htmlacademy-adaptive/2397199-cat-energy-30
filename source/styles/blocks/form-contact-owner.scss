@@ -72,6 +72,30 @@
 	margin-left: 13px;
 	padding: 14px 15px 13px;
 
+	&:hover + .form-contact-owner__icon {
+    background-color: #222222;
+    transition: background-color 0.2s linear;
+  }
+
+	&:focus-visible {
+    outline: 1px solid #444444;
+    transition: outline 0.2s linear;
+  }
+
+	&:focus-visible + .form-contact-owner__icon {
+    background-color: $bg-primary-color;
+    transition: background-color 0.2s linear;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 1px solid #ff8282;
+  }
+
+  &:invalid:not(:placeholder-shown) + .form-contact-owner__icon {
+    background-color: #ff8282;
+    transition: background-color 0.2s linear;
+  }
+
 	@media (min-width: $tablet-width) {
 		padding: 19px 20px 14px;
 	}
@@ -101,36 +125,31 @@
 	}
 }
 
-.form-contact-owner__label--email::before {
-	content: "";
+.form-contact-owner__icon {
 	position: absolute;
-	width: 17px;
-	height: 13px;
-	display: block;
-	@include bg-icon(transparent, url("../../images/icons/stack.svg#letter"), 100%);
-	right: 13px;
-	top: 6px;
-
-	@media (min-width: $tablet-width) {
-		right: 15px;
-		top: 11px;
-	}
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.2s linear;
 }
 
-.form-contact-owner__label--tel::before {
-	content: "";
-	position: absolute;
-	width: 15px;
-	height: 15px;
-	display: block;
-	@include bg-icon(transparent, url("../../images/icons/stack.svg#telephone"), 100%);
-	right: 13px;
-	top: 6px;
+.form-contact-owner__icon--email {
+	mask-image: url("../../images/icons/stack.svg#letter");
+	mask-position: center;
+	mask-repeat: no-repeat;
+	mask-size: 20px 20px;
+	background-color: $primary-color;
+}
 
-	@media (min-width: $tablet-width) {
-		right: 15px;
-		top: 11px;
-	}
+.form-contact-owner__icon--tel {
+	mask-image: url("../../images/icons/stack.svg#telephone");
+	mask-position: center;
+	mask-repeat: no-repeat;
+	mask-size: 20px 20px;
+	background-color: $primary-color;
 }
 
 .form-contact-owner::before {

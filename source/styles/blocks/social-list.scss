@@ -22,20 +22,49 @@
 }
 
 .social-list__link::before {
-	content: "";
-	display: block;
-	width: 30px;
-	height: 28px;
+	content:'';
+  display: block;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  background-color: #666666;
+  -webkit-transition: background 250ms ease-in-out;
+  -moz-transition: background 250ms ease-in-out;
+  -o-transition: background 250ms ease-in-out;
+  transition: background 250ms ease-in-out;
+}
+
+.social-list__link:hover::before {
+  background-color: $bg-primary-color;
+}
+
+.social-list__link:active::before {
+  opacity: 0.3;
 }
 
 .social-list__link--vk::before {
-  @include bg-icon(transparent, url("../../images/icons/stack.svg#vk"));
+  // @include bg-icon(transparent, url("../../images/icons/stack.svg#vk"));
+	mask-image: url("../../images/icons/stack.svg#vk");
+  -webkit-mask-image: url("../../images/icons/stack.svg#vk");
+	width: 27px;
+	height: 17px;
 }
 
 .social-list__link--youtube::before {
-  @include bg-icon(transparent, url("../../images/icons/stack.svg#youtube"));
+  // @include bg-icon(transparent, url("../../images/icons/stack.svg#youtube"));
+	mask-image: url("../../images/icons/stack.svg#youtube");
+  -webkit-mask-image: url("../../images/icons/stack.svg#youtube");
+	width: 24px;
+	height: 19px;
 }
 
 .social-list__link--telegram::before {
-  @include bg-icon(transparent, url("../../images/icons/stack.svg#telegramm"));
+  // @include bg-icon(transparent, url("../../images/icons/stack.svg#telegramm"));
+	mask-image: url("../../images/icons/stack.svg#telegramm");
+  -webkit-mask-image: url("../../images/icons/stack.svg#telegramm");
+	width: 20px;
+	height: 17px;
 }

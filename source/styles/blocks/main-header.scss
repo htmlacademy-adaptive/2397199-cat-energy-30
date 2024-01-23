@@ -31,7 +31,25 @@
 .main-header__logo-text {
   vertical-align: super;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 5px 13px 10px 13px;
+  }
+}
+
+.main-header__logo-pictures {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

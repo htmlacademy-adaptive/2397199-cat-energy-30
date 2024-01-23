@@ -1,9 +1,13 @@
 .card-table {
-	border-collapse: collapse;
+	@media (min-width: $tablet-width) {
+		border-collapse: collapse;
+	}
 }
 
 .card-table__stitch {
-	border-bottom: 1px solid #cdcdcd;
+	@media (min-width: $tablet-width) {
+		border-bottom: 1px solid #cdcdcd;
+	}
 }
 
 .card-table__parametr {

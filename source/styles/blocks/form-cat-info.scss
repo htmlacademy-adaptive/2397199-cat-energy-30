@@ -47,6 +47,15 @@
 	margin-left: 13px;
 	padding: 13px 15px 12px;
 
+	&:focus-visible {
+    outline: 1px solid #444444;
+    transition: outline 0.2s linear;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 1px solid #ff8282;
+  }
+
 	@media (min-width: $tablet-width) {
 		padding: 19px 20px 14px;
 	}
