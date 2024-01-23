@@ -52,7 +52,7 @@
     transition: outline 0.2s linear;
   }
 
-  &:invalid:not(:placeholder-shown) {
+  &:invalid::placeholder-shown {
     outline: 1px solid #ff8282;
   }
 
