@@ -2,6 +2,7 @@
   background-color: $third-color;
 	max-width: 320px;
 	margin: 0 auto;
+	padding-bottom: 20px;
 
 	@media (min-width: $tablet-width) {
 		display: flex;
@@ -34,9 +35,9 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0 40px;
+	padding: 10px 0 10px;
 	max-width: 280px;
-	margin: 0 auto;
+	margin: 10px auto;
 
 	@media (min-width: $tablet-width) {
 		padding: 0;

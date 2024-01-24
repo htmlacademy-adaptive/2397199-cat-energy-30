@@ -36,7 +36,7 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		grid-template-columns: 134px 1fr;
+		grid-template-columns: 167px 1fr;
 		max-width: 570px;
 		padding: 41px 52px 55px;
 	}
@@ -49,6 +49,30 @@
 
 	@media (min-width: $desktop-width) {
 		margin-bottom: 0;
+	}
+}
+
+.nutrition-programs__item--slim {
+	padding-bottom: 10px;
+
+	@media (min-width: $tablet-width) {
+		padding: 77px 63px 43px 52px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 41px 61px 45px 52px;
+	}
+}
+
+.nutrition-programs__item--mass {
+	padding-bottom: 10px;
+
+	@media (min-width: $tablet-width) {
+		padding: 77px 29px 43px 52px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding: 47px 67px 45px 52px;
 	}
 }
 
@@ -70,7 +94,7 @@
 		font-size: 36px;
 		line-height: 36px;
 		margin: 0;
-		padding: 77px 0px 24px 53px;
+		padding-bottom: 24px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -78,23 +102,24 @@
 		margin: 0;
 		grid-column: 2;
 		grid-row: 1/2;
-		padding-left: 47px;
+		justify-self: flex-start;
 	}
 }
 
 .nutrition-programs__description {
 	margin: 0;
-	padding: 20px 33px 23px 20px;
+	padding: 20px 33px 32px 20px;
 	max-width: 280px;
 
 	@media (min-width: $tablet-width) {
 		grid-column: 1;
-		padding: 0 0 38px 52px;
+		padding: 0;
+		padding-bottom: 38px;
 		max-width: 340px;
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 39px 0 23px 0;
+		padding: 39px 0 23px;
 		margin: 0;
 		grid-column: -1/1;
 		grid-row: 2/3;
@@ -104,8 +129,8 @@
 
 .nutrition-programs__link {
 	display: inline-block;
-	width: 240px;
-	padding: 19px 0 22px;
+	width: fit-content;
+	padding: 10px 0 12px;
 	margin-left: 20px;
 	font-family: $primary-font;
 	font-size: 16px;
@@ -122,8 +147,9 @@
 	}
 
 	@media (min-width: $tablet-width) {
+		border: none;
 		grid-column: 1;
-		padding: 10px 0px 53px 52px;
+		padding: 10px 0 10px;
 		margin: 0;
 	}
 
@@ -149,6 +175,7 @@
 		height: 211px;
 		grid-column: 2;
 		grid-row: 1/4;
+		justify-self: flex-end;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -156,6 +183,7 @@
 		height: 100px;
 		grid-column: 1;
 		grid-row: 1/2;
+		justify-self: flex-start;
 	}
 }
 
@@ -175,6 +203,7 @@
 		height: 200px;
 		grid-column: 2;
 		grid-row: 1/4;
+		justify-self: flex-end;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -182,6 +211,7 @@
 		height: 100px;
 		grid-column: 1;
 		grid-row: 1/2;
+		justify-self: flex-start;
 	}
 }
 
@@ -213,12 +243,12 @@
 	position: absolute;
 	height: 2.5px;
 	width: 15px;
-	background-color: $primary-color;
-	top: 27px;
+	background-color: #131313;
+	top: 18px;
 	left: 109px;
 
 	@media (min-width: $tablet-width) {
-		left: 161px;
+		left: 110px;
 		top: 18px;
 	}
 
@@ -228,10 +258,10 @@
 }
 
 .nutrition-programs__link--before::before {
-	left: 110px;
+	left: 105px;
 
 	@media (min-width: $tablet-width) {
-		left: 157px;
+		left: 106px;
 	}
 
 	@media (min-width: $desktop-width) {

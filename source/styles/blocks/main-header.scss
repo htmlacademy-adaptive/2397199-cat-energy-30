@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 55px 110px 0;
+    padding: 53px 110px 2px;
     justify-content: space-between;
   }
 }
@@ -26,30 +26,20 @@
   justify-content: space-between;
   min-width: 200px;
   align-items: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-header__logo-text {
   vertical-align: super;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 5px 13px 10px 13px;
-  }
-}
-
-.main-header__logo-pictures {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
