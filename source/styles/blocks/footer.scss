@@ -58,13 +58,13 @@
 	margin: 0;
 	padding: 0;
 	max-width: 280px;
+	column-gap: 138px;
 
 	&::after {
 		content:'';
 		display: block;
 		width: 27px;
 		height: 34px;
-		margin-left: 140px;
 		mask-image: url("../../images/icons/logo-html-academy.svg");
 		mask-repeat: no-repeat;
 		-webkit-mask-repeat: no-repeat;
@@ -88,6 +88,8 @@
 	}
 
 	@media (min-width: $tablet-width) {
+		column-gap: 0;
+
 		&::after {
 			margin-left: 22px;
 		}

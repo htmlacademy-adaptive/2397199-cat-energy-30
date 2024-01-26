@@ -90,6 +90,14 @@
   }
 }
 
+.advantages__decription br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .advantages__decription {
   margin: 0;
   display: inline-block;

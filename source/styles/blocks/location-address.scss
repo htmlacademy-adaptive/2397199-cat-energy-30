@@ -74,7 +74,7 @@
 	text-align: left;
 
 	@media (min-width: $tablet-width) {
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 20px;
 		text-align: right;
 		max-width: 168px;
@@ -87,9 +87,15 @@
 	}
 }
 
+.page__body--catalog .location-address__description-address {
+	@media (min-width: $desktop-width) {
+		font-size: 17px;
+	}
+}
+
 .location-address__description-address-city {
 	@media (min-width: $tablet-width) {
 		display: block;
-		margin-top: 18px;
+		margin-top: 20px;
 	}
 }

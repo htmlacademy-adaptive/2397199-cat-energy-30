@@ -4,10 +4,18 @@
 	}
 }
 
+table {
+	border-spacing: 0;
+
+	@media (min-width: $tablet-width) {
+		border-spacing: 2px;
+	}
+}
+
 .card-table__stitch {
 	@media (min-width: $tablet-width) {
-		border-bottom: 1px solid #cdcdcd;
 		display: flex;
+		border-bottom: 1px solid #cdcdcd;
 		justify-content: space-between;
 		padding-bottom: 3px;
 	}
