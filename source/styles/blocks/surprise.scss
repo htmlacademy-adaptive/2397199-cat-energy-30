@@ -10,7 +10,7 @@
 		grid-template-columns: 1fr 1fr;
 		min-height: 200px;
 		align-items: center;
-		margin: 70px 30px 0;
+		margin: 68px 31px 0;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -84,7 +84,7 @@
 		padding: 0;
 		display: inline-block;
 		position: absolute;
-		left: 70px;
+		left: 68px;
 		max-width: 162px;
 		max-height: 60px;
 	}
@@ -110,12 +110,12 @@
 		grid-row: 1/2;
 		margin: 0;
 		position: absolute;
-    right: 400px;
-		top: -10px;
+    right: 426px;
+		top: -12px;
 	}
 
 	@media (min-width: $desktop-width) {
 		position: static;
-		margin: 56px auto 46px;
+		margin: 56px auto 51px;
 	}
 }

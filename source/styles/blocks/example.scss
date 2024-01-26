@@ -5,12 +5,12 @@
 	@media (min-width: $tablet-width) {
 		padding: 0;
 		background: linear-gradient(to bottom,
-    rgb(255, 255, 255) 60%,
-    rgb(234, 234, 234) 60%);
+    rgb(255, 255, 255) 57%,
+    rgb(234, 234, 234) 57%);
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 0 110px 85px 110px;
+		padding: 0 110px 62px;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		background: linear-gradient(to bottom,
@@ -54,7 +54,7 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 146px 0 69px;
+		padding: 143px 0 66px;
 		margin: 0;
 		grid-column: 1;
 		max-width: 433px;
@@ -76,7 +76,7 @@
 		padding: 0;
 		grid-column: 1;
 		max-width: 433px;
-		padding-bottom: 55px;
+		padding-bottom: 68px;
 	}
 }
 
@@ -89,6 +89,10 @@
 
 .example__item:not(:last-child) {
 	margin-right: 28px;
+
+	@media (min-width: $tablet-width) {
+			margin-right: 35px;
+	}
 }
 
 .example__item-description {
@@ -106,7 +110,7 @@
 }
 
 .example__item-description--weight {
-	padding: 15px 42px 17px;
+	padding: 15px 42px 14px;
 
 	@media (min-width: $tablet-width) {
 		padding: 15px 57px 20px;
@@ -114,7 +118,7 @@
 }
 
 .example__item-description--time {
-	padding: 15px 20px 17px;
+	padding: 15px 20px 14px;
 
 	@media (min-width: $tablet-width) {
 		padding: 15px 30px 20px;
@@ -131,33 +135,37 @@
 	position: absolute;
 	margin: 0;
 	text-align: center;
-	max-width: 80px;
-	left: 23px;
-	top: 48px;
+	width: 80px;
+	left: 20px;
+	top: 46px;
 
 	@media (min-width: $tablet-width) {
+		font-size: 14px;
+		line-height: 14px;
 		background-color: #ffffff;
-		max-width: 142px;
 		padding: 0 10px 0 10px;
 	}
 }
 
 .example__number--weight {
 	@media (min-width: $tablet-width) {
-		top: 65px;
-		left: 29px;
+		top: 62px;
+		left: 22px;
+		width: 97px;
 		background-color: #ffffff;
 	}
 
 	@media (min-width: $desktop-width) {
 		background-color: #f2f2f2;
+		left: 21px;
 	}
 }
 
 .example__number--time {
 	@media (min-width: $tablet-width) {
-		top: 65px;
-		left: 18px;
+		top: 62px;
+		left: 9px;
+		width: 125px;
 		background-color: #ffffff;
 	}
 
@@ -174,7 +182,7 @@
 	color: $primary-color;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 30px 0 20px;
+	padding: 34px 0 20px;
 	text-align: center;
 
 	@media (min-width: $tablet-width) {
@@ -182,13 +190,28 @@
 		font-size: 20px;
 		text-align: end;
 		vertical-align: middle;
-		padding: 30px 30px 20px 79px;
+		padding: 0 30px 19px 164px;
 	}
 
 	@media (min-width: $desktop-width) {
 		padding: 0;
-		padding-bottom: 75px;
 		grid-column: 1;
 		text-align: left;
+		position: relative;
+		bottom: 13px;
+		left: 1px;
+	}
+}
+
+.example__description-costs-value {
+	@media (min-width: $tablet-width) {
+		margin-top: 9px;
+		display: block;
+	}
+	
+	@media (min-width: $desktop-width) {
+		margin-top: 0;
+		display: inline-block;
+		margin-left: 62px;
 	}
 }

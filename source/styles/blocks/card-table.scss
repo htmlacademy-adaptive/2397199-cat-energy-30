@@ -7,6 +7,19 @@
 .card-table__stitch {
 	@media (min-width: $tablet-width) {
 		border-bottom: 1px solid #cdcdcd;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 3px;
+	}
+
+	@media (min-width: $desktop-width) {
+		padding-bottom: 4px;
+	}
+}
+
+.card-table__stitch:not(:last-child) {
+	@media (min-width: $tablet-width) {
+		margin-bottom: 6px;
 	}
 }
 

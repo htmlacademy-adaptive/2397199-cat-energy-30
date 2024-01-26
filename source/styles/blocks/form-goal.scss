@@ -14,7 +14,7 @@
     padding-right: 110px;
     display: inline-block;
     vertical-align: top;
-    width: 565px;
+    width: 570px;
   }
 }
 
@@ -45,12 +45,12 @@
   color: $secondary-color;
   text-transform: uppercase;
   vertical-align: middle;
-  margin-left: 15px;
+  margin-left: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
   }
 }
 

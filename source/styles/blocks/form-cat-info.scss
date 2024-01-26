@@ -10,7 +10,7 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 0 80px 0 110px;
+		padding: 0 76px 0 110px;
 		display: inline-block;
 	}
 }
@@ -26,6 +26,14 @@
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 20px;
+	}
+}
+
+.form-cat-info__item:nth-child(2) {
+	margin-bottom: 12px;
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 16px;
 	}
 }
 
@@ -51,7 +59,7 @@
 	color: $secondary-color;
 	text-transform: uppercase;
 	margin-left: 13px;
-	padding: 13px 15px 12px;
+	padding: 14px 13px 10px;
 
 	&:focus-visible {
     outline: 1px solid #444444;
@@ -63,44 +71,44 @@
   }
 
 	@media (min-width: $tablet-width) {
-		padding: 19px 20px 14px;
+		padding: 10px 20px 10px 15px;
 		font-size: 20px;
 		line-height: 30px;
 	}
 }
 
 .form-cat-info__input--name {
-	width: 193px;
+	width: 197px;
 
 	@media (min-width: $tablet-width) {
-		width: 521px;
+		width: 526px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 463px;
+		width: 468px;
 	}
 }
 
 .form-cat-info__input--weight {
-	width: 171px;
+	width: 175px;
 
 	@media (min-width: $tablet-width) {
-		width: 494px;
+		width: 498px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 436px;
+		width: 440px;
 	}
 }
 
 .form-cat-info__input--age {
-	width: 137px;
+	width: 141px;
 
 	@media (min-width: $tablet-width) {
-		width: 451px;
+		width: 456px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 393px;
+		width: 398px;
 	}
 }

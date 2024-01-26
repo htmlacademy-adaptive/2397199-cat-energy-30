@@ -16,8 +16,11 @@
     justify-content: flex-end;
     background-color: transparent;
     flex-direction: row;
-    padding: 0 10px;
-    width: 504px;
+    width: 508px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 624px;
   }
 }
 
@@ -32,7 +35,7 @@
 
 .site-list__link {
   display: block;
-  padding: 22px 10px 24px 10px;
+  padding: 22px 10px 23px;
   font-family: $primary-font;
   font-size: 20px;
   font-weight: 400;
@@ -49,7 +52,7 @@
     border: none;
     font-size: 18px;
     line-height: 24px;
-    padding: 15px;
+    padding: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,11 +91,11 @@
     width: 65px;
     height: 2px;
     background-color: $bg-primary-color;
-    bottom: 11px;
+    bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 72px;
+    width: 71px;
     background-color: #ffffff;
   }
 }
@@ -104,7 +107,7 @@
     width: 152px;
     height: 2px;
     background-color: $bg-primary-color;
-    bottom: 12px;
+    bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,5 +127,6 @@
 
   @media (min-width: $desktop-width) {
     width: 170px;
+    bottom: 8px;
   }
 }

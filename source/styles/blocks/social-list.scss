@@ -1,6 +1,6 @@
 .social-list {
   list-style-type: none;
-	padding: 20px 0;
+	padding: 20px 0 7px;
 	margin: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -10,7 +10,7 @@
 	border-bottom: 1px solid #d9d9d9;
 
 	@media (min-width: $tablet-width) {
-		padding: 0;
+		padding: 10px 0 0 35px;
 		border: none;
 	}
 }
@@ -46,25 +46,25 @@
 }
 
 .social-list__link--vk::before {
-  // @include bg-icon(transparent, url("../../images/icons/stack.svg#vk"));
 	mask-image: url("../../images/icons/stack.svg#vk");
   -webkit-mask-image: url("../../images/icons/stack.svg#vk");
 	width: 27px;
 	height: 17px;
+	margin-left: 4px;
 }
 
 .social-list__link--youtube::before {
-  // @include bg-icon(transparent, url("../../images/icons/stack.svg#youtube"));
 	mask-image: url("../../images/icons/stack.svg#youtube");
   -webkit-mask-image: url("../../images/icons/stack.svg#youtube");
 	width: 24px;
 	height: 19px;
+	margin-left: 4px;
 }
 
 .social-list__link--telegram::before {
-  // @include bg-icon(transparent, url("../../images/icons/stack.svg#telegramm"));
 	mask-image: url("../../images/icons/stack.svg#telegramm");
   -webkit-mask-image: url("../../images/icons/stack.svg#telegramm");
 	width: 20px;
 	height: 17px;
+	margin-left: 4px;
 }

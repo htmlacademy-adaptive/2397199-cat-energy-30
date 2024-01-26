@@ -39,14 +39,14 @@
 	color: $secondary-color;
 	text-transform: uppercase;
 	width: 250px;
-	height: 150px;
-	padding: 14px;
+	height: 123px;
+	padding: 12px 15px;
 	margin: 0 20px 23px;
 
 	@media (min-width: $tablet-width) {
 		width: 586px;
-		height: 175px;
-		margin: 0 70px 65px;
+		height: 152px;
+		margin: 0 70px 61px;
 		padding: 11px 20px;
 		font-size: 20px;
 		line-height: 30px;
@@ -54,16 +54,20 @@
 
 	@media (min-width: $desktop-width) {
 		width: 1178px;
-		margin: 0 110px 70px;
+		margin: 0 110px 66px;
 	}
 }
 
 .form-comment::before {
 	content: "";
 	position: absolute;
-	top: 21px;
+	top: 14px;
 	right: 0;
 	width: 100%;
 	height: 2px;
 	background-color: $bg-primary-color;
+
+	@media (min-width: $tablet-width) {
+		top: 23px;
+	}
 }

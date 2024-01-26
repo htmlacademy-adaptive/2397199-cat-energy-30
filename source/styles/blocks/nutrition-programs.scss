@@ -1,5 +1,5 @@
 .nutrition-programs {
-	padding: 0 20px 20px;
+	padding: 0 20px;
 	background-color: #ffffff;
 
 	@media (min-width: $tablet-width) {
@@ -29,10 +29,9 @@
 
 	@media (min-width: $tablet-width) {
 		display: grid;
-		grid-template-columns: 1fr 300px;
+		padding-right: 15px;
 		margin-bottom: 0;
 		align-items: center;
-		padding-right: 15px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -56,11 +55,13 @@
 	padding-bottom: 10px;
 
 	@media (min-width: $tablet-width) {
-		padding: 77px 63px 43px 52px;
+		grid-template-columns: 1fr 275px;
+		padding: 77px 63px 49px 52px;
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 41px 61px 45px 52px;
+		grid-template-columns: 162px 1fr;
+		padding: 41px 64px 45px 52px;
 	}
 }
 
@@ -68,11 +69,13 @@
 	padding-bottom: 10px;
 
 	@media (min-width: $tablet-width) {
-		padding: 77px 29px 43px 52px;
+		grid-template-columns: 1fr 286px;
+		padding: 77px 29px 48px 52px;
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 47px 67px 45px 52px;
+		padding: 47px 64px 45px 37px;
+		grid-template-columns: 176px 1fr;
 	}
 }
 
@@ -106,9 +109,15 @@
 	}
 }
 
+// .nutrition-programs__title--mass {
+// 	@media (min-width: $desktop-width) {
+		
+// 	}
+// }
+
 .nutrition-programs__description {
 	margin: 0;
-	padding: 20px 33px 32px 20px;
+	padding: 20px 33px 31px 20px;
 	max-width: 280px;
 
 	@media (min-width: $tablet-width) {
@@ -119,11 +128,17 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 39px 0 23px;
+		padding: 43px 0 23px;
 		margin: 0;
 		grid-column: -1/1;
 		grid-row: 2/3;
-		max-width: 452px;
+		max-width: 454px;
+	}
+}
+
+.nutrition-programs__description--mass {
+	@media (min-width: $desktop-width) {
+		padding: 36px 0 23px 15px;
 	}
 }
 
@@ -147,17 +162,27 @@
 	}
 
 	@media (min-width: $tablet-width) {
+		font-size: 20px;
+		line-height: 30px;
 		border: none;
 		grid-column: 1;
-		padding: 10px 0 10px;
+		padding: 12px 0 10px;
 		margin: 0;
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 10px 10px 10px 0;
+		display: flex;
+		align-items: center;
+		padding: 6px 3px 10px;
 		margin: 0;
 		grid-column: 1;
 		grid-row: 3/4;
+	}
+}
+
+.nutrition-programs__link-mass {
+	@media (min-width: $desktop-width) {
+		margin-left: 13px;
 	}
 }
 
@@ -167,7 +192,7 @@
 	width: 50px;
 	height: 53px;
 	@include bg-icon(transparent, url("../../images/icons/stack.svg#domestic-cat"), 100%);
-	margin: 21px 20px 0px 20px;
+	margin: 21px 16px 0px 20px;
 
 	@media (min-width: $tablet-width) {
 		margin: 0;
@@ -176,6 +201,7 @@
 		grid-column: 2;
 		grid-row: 1/4;
 		justify-self: flex-end;
+		align-self: flex-start;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -192,9 +218,8 @@
 	display: inline-block;
 	width: 67px;
 	height: 50px;
-	padding-left: 15px;
 	@include bg-icon(transparent, url("../../images/icons/stack.svg#wild-cat"), 100%);
-	margin: 24px 11px 0 13px;
+	margin: 24px 7px 0 13px;
 
 	@media (min-width: $tablet-width) {
 		margin: 0;
@@ -203,15 +228,18 @@
 		height: 200px;
 		grid-column: 2;
 		grid-row: 1/4;
+		align-self: flex-start;
 		justify-self: flex-end;
+		padding-top: 31px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 134px;
+		width: 131px;
 		height: 100px;
 		grid-column: 1;
 		grid-row: 1/2;
 		justify-self: flex-start;
+		padding: 0;
 	}
 }
 
@@ -223,18 +251,26 @@
 .nutrition-programs__link--arrow::after {
 	content: "";
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 13px;
 	width: 32px;
 	height: 12px;
 	@include bg-icon(transparent, url("../../images/icons/stack.svg#arrow"), 100%);
 
 	@media (min-width: $tablet-width) {
 		grid-column: 1;
+		margin-left: 23px;
 	}
 
 	@media (min-width: $desktop-width) {
 		grid-column: 1;
 		grid-row: 3/4;
+		margin-left: 17px;
+	}
+}
+
+.nutrition-programs__link-mass::after {
+	@media (min-width: $desktop-width) {
+		margin-left: 21px;
 	}
 }
 
@@ -248,12 +284,13 @@
 	left: 109px;
 
 	@media (min-width: $tablet-width) {
-		left: 110px;
-		top: 18px;
+		left: 134px;
+		top: 29px;
 	}
 
 	@media (min-width: $desktop-width) {
-		left: 110px;
+		left: 131px;
+		top: 20px;
 	}
 }
 
@@ -261,10 +298,11 @@
 	left: 105px;
 
 	@media (min-width: $tablet-width) {
-		left: 106px;
+		left: 129px;
+		height: 2px;
 	}
 
 	@media (min-width: $desktop-width) {
-		left: 105px;
+		left: 130px;
 	}
 }

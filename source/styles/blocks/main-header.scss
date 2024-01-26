@@ -2,28 +2,29 @@
   display: flex;
   align-items: center;
   width: 280px;
-  padding: 13px 20px;
+  padding: 13px 20px 12px;
   margin: 0 auto;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     align-items: center;
-    width: 704px;
-    padding: 25px 32px;
+    width: 726px;
+    padding: 25px 12px 25px 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 53px 110px 2px;
+    padding: 53px 110px 2px 110px;
     justify-content: space-between;
   }
 }
 
 .main-header__logo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 33px 1fr;
+  column-gap: 56px;
   text-decoration: none;
-  justify-content: space-between;
   min-width: 200px;
   align-items: center;
 
@@ -34,12 +35,27 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 66px 1fr;
+    column-gap: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 18px;
+  }
 }
 
 .main-header__logo-text {
-  vertical-align: super;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
-    padding: 5px 13px 10px 13px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+    padding: 0;
   }
 }
