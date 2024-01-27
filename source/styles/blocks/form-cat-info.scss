@@ -2,7 +2,7 @@
 	border: none;
 	border-bottom: 1px solid #d9d9d9;
 	margin: 0;
-	padding: 0 20px 24px;
+	padding: 0 20px 26px;
 
 	@media (min-width: $tablet-width) {
 		padding: 0 70px 72px;
@@ -22,7 +22,7 @@
 }
 
 .form-cat-info__item:not(:last-child) {
-	margin-bottom: 14px;
+	margin-bottom: 17px;
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 20px;
@@ -30,7 +30,7 @@
 }
 
 .form-cat-info__item:nth-child(2) {
-	margin-bottom: 12px;
+	margin-bottom: 18px;
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 16px;

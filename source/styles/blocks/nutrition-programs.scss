@@ -171,7 +171,8 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 49px;
 		align-items: center;
 		padding: 6px 3px 10px;
 		margin: 0;
@@ -262,8 +263,8 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		grid-column: 1;
-		grid-row: 3/4;
+		grid-column: 2;
+		grid-row: 1/2;
 		margin-left: 17px;
 	}
 }
@@ -277,7 +278,7 @@
 .nutrition-programs__link--arrow::before {
 	content: "";
 	position: absolute;
-	height: 2.5px;
+	height: 2px;
 	width: 15px;
 	background-color: #131313;
 	top: 18px;
@@ -299,7 +300,6 @@
 
 	@media (min-width: $tablet-width) {
 		left: 129px;
-		height: 2px;
 	}
 
 	@media (min-width: $desktop-width) {

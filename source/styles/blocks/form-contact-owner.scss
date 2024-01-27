@@ -51,7 +51,7 @@
 }
 
 .form-contact-owner__item:not(:last-child) {
-	margin-bottom: 14px;
+	margin-bottom: 19px;
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 16px;
@@ -141,7 +141,7 @@
 .form-contact-owner__icon {
 	position: absolute;
   top: 50%;
-  right: 12px;
+  right: 9px;
   transform: translateY(-50%);
   display: inline-block;
   width: 20px;
