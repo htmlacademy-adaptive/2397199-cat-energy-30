@@ -1,5 +1,5 @@
 .form-other {
-  border: none;  
+  border: none;
   margin: 0;
   padding: 0;
   position: relative;
@@ -21,8 +21,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-		line-height: 36px;
-		padding: 0 40px;
+    line-height: 36px;
+    padding: 0 40px;
     margin-left: 30px;
     margin-bottom: 57px;
   }
@@ -78,14 +78,14 @@
 }
 
 .form-other__input {
-	appearance: none;
+  appearance: none;
   position: relative;
   display: inline-block;
   background: transparent;
   height: 30px;
   width: 30px;
   vertical-align: middle;
-	border: 1px solid #cdcdcd;
+  border: 1px solid #cdcdcd;
   margin: 0;
 
   &:disabled {
@@ -99,7 +99,7 @@
 }
 
 .form-other__input:checked:before {
-	content: "";
+  content: "";
   display: block;
   width: 18px;
   height: 14px;
@@ -116,13 +116,13 @@
 }
 
 .form-other::before {
-	content: "";
-	position: absolute;
-	top: 14px;
-	right: 0;
-	width: 100%;
-	height: 2px;
-	background-color: $bg-primary-color;
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $bg-primary-color;
 
   @media (min-width: $tablet-width) {
     top: 22px;

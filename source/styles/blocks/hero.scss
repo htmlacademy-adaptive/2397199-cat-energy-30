@@ -19,24 +19,24 @@
 
 .hero::before {
 	content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 0;
-  min-height: 302px;
-  background-image: linear-gradient(
-      rgba(104, 183, 56, 0.85) 100%,
-      rgba(104, 183, 56, 0.85) 100%
-    ),
-    image-set(
-      url("../../images/index/index-background-mobile@1x.jpg") 1x,
-      url("../../images/index/index-background-mobile@2x.jpg") 2x
-    );
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	z-index: 0;
+	min-height: 302px;
+	background-image: linear-gradient(
+			rgba(104, 183, 56, 0.85) 100%,
+			rgba(104, 183, 56, 0.85) 100%
+		),
+		image-set(
+			url("../../images/index/index-background-mobile@1x.jpg") 1x,
+			url("../../images/index/index-background-mobile@2x.jpg") 2x
+		);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
 
 	@media (min-width: $tablet-width) {
 		content: none;

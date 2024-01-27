@@ -55,15 +55,15 @@
 }
 
 .form-goal__input {
-	appearance: none;
-	position: relative;
-	display: inline-block;
-	background: transparent;
-	height: 30px;
-	width: 30px;
-	vertical-align: middle;
-	border-radius: 50%;
-	border: 1px solid #cdcdcd;
+  appearance: none;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
   margin: 0;
 
   &:disabled {
@@ -77,7 +77,7 @@
 }
 
 .form-goal__input::before {
-	content: "";
+  content: "";
   display: block;
   width: 13px;
   height: 13px;
@@ -98,6 +98,6 @@
 }
 
 .form-goal__input:checked::before {
-	background-color: $bg-primary-color;
-	box-shadow: 0px 1px 3px #0003;
+  background-color: $bg-primary-color;
+  box-shadow: 0px 1px 3px #0003;
 }

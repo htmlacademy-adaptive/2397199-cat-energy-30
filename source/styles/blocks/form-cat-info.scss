@@ -46,8 +46,8 @@
 	text-transform: uppercase;
 
 	@media (min-width: $tablet-width) {
-	font-size: 20px;
-	line-height: 30px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 }
 
@@ -63,12 +63,12 @@
 	height: 18px;
 
 	&:focus-visible {
-    outline: 1px solid #444444;
-    transition: outline 0.2s linear;
+		outline: 1px solid #444444;
+		transition: outline 0.2s linear;
   }
 
   &:invalid:not(:placeholder-shown){
-    outline: 1px solid #ff8282;
+		outline: 1px solid #ff8282;
   }
 
 	@media (min-width: $tablet-width) {

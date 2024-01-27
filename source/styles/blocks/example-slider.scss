@@ -4,20 +4,20 @@
   margin: 0 auto;
   width: 280px;
   grid-template-columns: 50% 4px 1fr;
-	padding-bottom: 36px;
+  padding-bottom: 36px;
   background: transparent;
   box-shadow: none;
 
   @media (min-width: $tablet-width) {
     width: 560px;
-		padding: 99px 104px 97px;
+    padding: 99px 104px 97px;
   }
 
   @media (min-width: $desktop-width) {
     background: none;
     grid-column: 2;
-		grid-row: 1/4;
-		padding: 0;
+    grid-row: 1/4;
+    padding: 0;
     padding-left: 48px;
   }
 }
@@ -50,7 +50,7 @@
   min-height: 100%;
   padding: 0;
   border-radius: 2px;
-	border: none;
+  border: none;
   background-color: #666666;
   cursor: ew-resize;
   transition: background-color 0.1s ease;
@@ -85,10 +85,10 @@
     content: "";
     width: 24px;
     height: 18px;
-		mask-image: url("../../images/icons/stack.svg#arrow-slider");
-		mask-repeat: no-repeat;
-		mask-position: center;
-		background-color: #666666;
+    mask-image: url("../../images/icons/stack.svg#arrow-slider");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #666666;
   }
 }
 

@@ -5,8 +5,8 @@
 	@media (min-width: $tablet-width) {
 		padding: 0;
 		background: linear-gradient(to bottom,
-    rgb(255, 255, 255) 57%,
-    rgb(234, 234, 234) 57%);
+		rgb(255, 255, 255) 57%,
+		rgb(234, 234, 234) 57%);
 	}
 
 	@media (min-width: $desktop-width) {
@@ -15,7 +15,7 @@
 		grid-template-columns: 1fr 1fr;
 		background: linear-gradient(to bottom,
 		#ffffff 25%,
-    #f2f2f2 25%);
+		#f2f2f2 25%);
 	}
 }
 
@@ -91,7 +91,7 @@
 	margin-right: 28px;
 
 	@media (min-width: $tablet-width) {
-			margin-right: 35px;
+		margin-right: 35px;
 	}
 }
 

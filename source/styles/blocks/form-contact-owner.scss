@@ -85,27 +85,27 @@
 	height: 18px;
 
 	&:hover + .form-contact-owner__icon {
-    background-color: #222222;
-    transition: background-color 0.2s linear;
+		background-color: #222222;
+		transition: background-color 0.2s linear;
   }
 
 	&:focus-visible {
-    outline: 1px solid #444444;
-    transition: outline 0.2s linear;
+		outline: 1px solid #444444;
+		transition: outline 0.2s linear;
   }
 
 	&:focus-visible + .form-contact-owner__icon {
-    background-color: $bg-primary-color;
-    transition: background-color 0.2s linear;
+		background-color: $bg-primary-color;
+		transition: background-color 0.2s linear;
   }
 
   &:invalid:not(:placeholder-shown) {
-    outline: 1px solid #ff8282;
+		outline: 1px solid #ff8282;
   }
 
   &:invalid:not(:placeholder-shown) + .form-contact-owner__icon {
-    background-color: #ff8282;
-    transition: background-color 0.2s linear;
+		background-color: #ff8282;
+		transition: background-color 0.2s linear;
   }
 
 	@media (min-width: $tablet-width) {
@@ -142,13 +142,13 @@
 
 .form-contact-owner__icon {
 	position: absolute;
-  top: 50%;
-  right: 9px;
-  transform: translateY(-50%);
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  transition: background-color 0.2s linear;
+	top: 50%;
+	right: 9px;
+	transform: translateY(-50%);
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	transition: background-color 0.2s linear;
 }
 
 .form-contact-owner__icon--email {

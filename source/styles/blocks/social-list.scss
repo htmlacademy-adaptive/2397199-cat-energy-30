@@ -1,5 +1,5 @@
 .social-list {
-  list-style-type: none;
+	list-style-type: none;
 	padding: 20px 0 7px;
 	margin: 0;
 	display: flex;
@@ -23,31 +23,31 @@
 
 .social-list__link::before {
 	content:'';
-  display: block;
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-  mask-size: contain;
-  -webkit-mask-size: contain;
-  background-color: #666666;
-  -webkit-transition: background 250ms ease-in-out;
-  -moz-transition: background 250ms ease-in-out;
-  -o-transition: background 250ms ease-in-out;
-  transition: background 250ms ease-in-out;
+	display: block;
+	mask-repeat: no-repeat;
+	-webkit-mask-repeat: no-repeat;
+	mask-position: center;
+	-webkit-mask-position: center;
+	mask-size: contain;
+	-webkit-mask-size: contain;
+	background-color: #666666;
+	-webkit-transition: background 250ms ease-in-out;
+	-moz-transition: background 250ms ease-in-out;
+	-o-transition: background 250ms ease-in-out;
+	transition: background 250ms ease-in-out;
 }
 
 .social-list__link:hover::before {
-  background-color: $bg-primary-color;
+	background-color: $bg-primary-color;
 }
 
 .social-list__link:active::before {
-  opacity: 0.3;
+	opacity: 0.3;
 }
 
 .social-list__link--vk::before {
 	mask-image: url("../../images/icons/stack.svg#vk");
-  -webkit-mask-image: url("../../images/icons/stack.svg#vk");
+	-webkit-mask-image: url("../../images/icons/stack.svg#vk");
 	width: 27px;
 	height: 17px;
 	margin-left: 4px;
@@ -55,7 +55,7 @@
 
 .social-list__link--youtube::before {
 	mask-image: url("../../images/icons/stack.svg#youtube");
-  -webkit-mask-image: url("../../images/icons/stack.svg#youtube");
+	-webkit-mask-image: url("../../images/icons/stack.svg#youtube");
 	width: 24px;
 	height: 19px;
 	margin-left: 4px;
@@ -63,7 +63,7 @@
 
 .social-list__link--telegram::before {
 	mask-image: url("../../images/icons/stack.svg#telegramm");
-  -webkit-mask-image: url("../../images/icons/stack.svg#telegramm");
+	-webkit-mask-image: url("../../images/icons/stack.svg#telegramm");
 	width: 20px;
 	height: 17px;
 	margin-left: 4px;
