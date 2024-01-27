@@ -45,7 +45,7 @@
 	@media (min-width: $desktop-width) {
 		display: flex;
 		flex-wrap: wrap;
-		column-gap: 83px;
+		column-gap: 85px;
 		padding: 0 110px 53px;
 	}
 }
@@ -82,6 +82,7 @@
 	text-transform: uppercase;
 	margin-left: 13px;
 	padding: 12px 13px 11px 12px;
+	height: 18px;
 
 	&:hover + .form-contact-owner__icon {
     background-color: #222222;
@@ -111,6 +112,7 @@
 		padding: 10px 20px 10px 17px;
 		font-size: 20px;
 		line-height: 30px;
+		height: 33px;
 	}
 }
 

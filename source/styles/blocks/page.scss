@@ -1,8 +1,12 @@
 .page {
 	background-color: rgba(165, 165, 165, 0.1);
+	height: 100%;
 }
 
 .page__body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
 	font-family: $secondary-font;
 	margin: 0;
 	padding: 0;
