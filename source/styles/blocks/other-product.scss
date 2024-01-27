@@ -10,6 +10,7 @@
 	@media (min-width: $desktop-width) {
 		display: grid;
 		grid-template-columns: 1085px 245px;
+		padding-bottom: 85px;
 	}
 }
 
@@ -29,15 +30,15 @@
 	@media (min-width: $tablet-width) {
 		font-size: 36px;
 		line-height: 36px;
-		padding: 0 40px 80px;
+		padding: 0 40px 78px;
 		left: 30px;
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 0 40px 80px;
-		grid-column: 1/-1;
+		padding: 0 40px 78px;
+		grid-column: 1/2;
 		grid-row: 1/2;
-		left: 110px;
+		left: 70px;
 	}
 }
 

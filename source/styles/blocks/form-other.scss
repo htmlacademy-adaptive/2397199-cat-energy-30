@@ -23,7 +23,8 @@
     font-size: 36px;
 		line-height: 36px;
 		padding: 0 40px;
-		margin-left: 30px;
+    margin-left: 30px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,22 +38,22 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 52px;
+    padding: 0 64px 52px 70px;
     display: grid;
     grid-template-columns: 290px 290px;
-    column-gap: 47px;
+    column-gap: 54px;
     row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 60px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
+    column-gap: 79px;
   }
 }
 
 .form-other__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -67,11 +68,12 @@
   color: $secondary-color;
   text-transform: uppercase;
   vertical-align: middle;
-  margin-left: 15px;
+  margin-left: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-left: 16px;
   }
 }
 
@@ -85,6 +87,10 @@
   vertical-align: middle;
 	border: 1px solid #cdcdcd;
   margin: 0;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     height: 40px;
@@ -100,7 +106,7 @@
   @include bg-icon(transparent, url("../../images/icons/stack.svg#tick"), 100%);
   position: absolute;
   top: 6px;
-  left: 4px;
+  left: 6px;
 
   @media (min-width: $tablet-width) {
     width: 26px;
@@ -112,9 +118,13 @@
 .form-other::before {
 	content: "";
 	position: absolute;
-	top: 22px;
+	top: 14px;
 	right: 0;
 	width: 100%;
 	height: 2px;
 	background-color: $bg-primary-color;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+  }
 }

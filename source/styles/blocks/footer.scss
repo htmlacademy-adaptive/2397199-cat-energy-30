@@ -1,19 +1,32 @@
 .footer {
   background-color: $third-color;
-	max-width: 320px;
+	width: 280px;
 	margin: 0 auto;
+	padding: 20px 20px 20px;
 
 	@media (min-width: $tablet-width) {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 55px 30px;
-		max-width: 708px;
+		width: 708px;
 	}
 
 	@media (min-width: $desktop-width) {
-		max-width: 1220px;
+		width: 1220px;
 		padding: 66px 110px;
+	}
+}
+
+.footer__logo-text {
+	&:hover {
+		opacity: 0.8;
+	}
+	&:focus {
+		opacity: 0.8;
+	}
+	&:active {
+		opacity: 0.5;
 	}
 }
 
@@ -22,7 +35,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 0 40px;
+	padding: 21px 0 10px;
 	max-width: 280px;
 	margin: 0 auto;
 
@@ -38,8 +51,47 @@
 	font-weight: 400;
 	line-height: 20px;
 	color: #444444;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	max-width: 280px;
+	column-gap: 138px;
+
+	&::after {
+		content:'';
+		display: block;
+		width: 27px;
+		height: 34px;
+		mask-image: url("../../images/icons/logo-html-academy.svg");
+		mask-repeat: no-repeat;
+		-webkit-mask-repeat: no-repeat;
+		mask-position: center;
+		-webkit-mask-position: center;
+		mask-size: contain;
+		-webkit-mask-size: contain;
+		background-color: #666666;
+		-webkit-transition: background 250ms ease-in-out;
+		-moz-transition: background 250ms ease-in-out;
+		-o-transition: background 250ms ease-in-out;
+		transition: background 250ms ease-in-out;
+	}
+
+	&:hover::after {
+		background-color: $bg-primary-color;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 
 	@media (min-width: $tablet-width) {
-		padding-right: 23px;
+		column-gap: 0;
+
+		&::after {
+			margin-left: 22px;
+		}
 	}
 }

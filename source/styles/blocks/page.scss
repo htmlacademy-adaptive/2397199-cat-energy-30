@@ -1,9 +1,18 @@
 .page {
-	background-color: rgba(165, 165, 165, 0.3);
+	background-color: rgba(165, 165, 165, 0.1);
+	height: 100%;
 }
 
 .page__body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: min-content 1fr min-content;
 	font-family: $secondary-font;
+	margin: 0;
+	padding: 0;
+}
+
+.page__body--form {
 	margin: 0;
 	padding: 0;
 }

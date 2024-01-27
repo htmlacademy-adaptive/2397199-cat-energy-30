@@ -9,18 +9,18 @@
 	line-height: 36px;
 	color: $primary-color;
 	margin: 0;
-	padding: 26px 20px 37px;
+	padding: 25px 20px 37px;
 	border-top: 1px solid #d9d9d9;
 
 	@media (min-width: $tablet-width) {
 		font-size: 60px;
 		line-height: 60px;
-		padding: 40px 70px 54px;
+		padding: 34px 70px 54px;
 		border: none;
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 55px 110px 65px;
+		padding: 70px 110px 55px;
 	}
 }
 
@@ -32,7 +32,7 @@
 	color: $primary-color;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 0 20px 39px;
+	padding: 0 20px 38px;
 
 	@media (min-width: $tablet-width) {
 	font-size: 20px;

@@ -2,7 +2,7 @@
 	border: none;
 	border-bottom: 1px solid #d9d9d9;
 	margin: 0;
-	padding: 0 20px 24px;
+	padding: 0 20px 26px;
 
 	@media (min-width: $tablet-width) {
 		padding: 0 70px 72px;
@@ -10,7 +10,7 @@
 	}
 
 	@media (min-width: $desktop-width) {
-		padding: 0 80px 0 110px;
+		padding: 0 76px 0 110px;
 		display: inline-block;
 	}
 }
@@ -22,10 +22,18 @@
 }
 
 .form-cat-info__item:not(:last-child) {
-	margin-bottom: 14px;
+	margin-bottom: 17px;
 
 	@media (min-width: $tablet-width) {
 		margin-bottom: 20px;
+	}
+}
+
+.form-cat-info__item:nth-child(2) {
+	margin-bottom: 18px;
+
+	@media (min-width: $tablet-width) {
+		margin-bottom: 16px;
 	}
 }
 
@@ -44,46 +52,66 @@
 }
 
 .form-cat-info__input {
+	font-family: $primary-font;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	color: $secondary-color;
+	text-transform: uppercase;
 	margin-left: 13px;
-	padding: 13px 15px 12px;
+	padding: 14px 13px 10px;
+	height: 18px;
+
+	&:focus-visible {
+    outline: 1px solid #444444;
+    transition: outline 0.2s linear;
+  }
+
+  &:invalid:not(:placeholder-shown){
+    outline: 1px solid #ff8282;
+  }
 
 	@media (min-width: $tablet-width) {
-		padding: 19px 20px 14px;
+		padding: 10px 20px 10px 18px;
+		font-size: 20px;
+		line-height: 30px;
+		margin-left: 10px;
+		height: 33px;
 	}
 }
 
 .form-cat-info__input--name {
-	width: 193px;
+	width: 197px;
 
 	@media (min-width: $tablet-width) {
-		width: 521px;
+		width: 524px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 463px;
+		width: 468px;
 	}
 }
 
 .form-cat-info__input--weight {
-	width: 171px;
+	width: 175px;
 
 	@media (min-width: $tablet-width) {
-		width: 494px;
+		width: 496px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 436px;
+		width: 440px;
 	}
 }
 
 .form-cat-info__input--age {
-	width: 137px;
+	width: 141px;
 
 	@media (min-width: $tablet-width) {
-		width: 451px;
+		width: 453px;
 	}
 
 	@media (min-width: $desktop-width) {
-		width: 393px;
+		width: 398px;
 	}
 }

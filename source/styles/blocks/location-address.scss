@@ -9,14 +9,16 @@
 
 	@media (min-width: $tablet-width) {
 		justify-content: space-between;
-		padding: 60px 70px;
+		padding: 59px 70px;
 		max-width: 628px;
 	}
 
 	@media (min-width: $desktop-width) {
+		justify-content: normal;
+		column-gap: 79px;
 		position: absolute;
-		width: 405px;
-		padding: 60px 80px;
+		width: 434px;
+		padding: 60px 51px 58px 80px;
 		background-color: #ffffff;
 		left: 110px;
 		top: 95px;
@@ -47,11 +49,12 @@
 	color: #111111;
 	text-transform: uppercase;
 	margin: 0;
-	width: 123px;
+	width: 140px;
 
 	@media (min-width: $tablet-width) {
 		font-size: 20px;
-		line-height: 26px;
+		line-height: 27px;
+		width: 156px;
 	}
 
 	@media (min-width: $desktop-width) {
@@ -67,18 +70,32 @@
 	line-height: 20px;
 	color: $secondary-color;
 	margin: 0;
-	max-width: 157px;
-	text-align: right;
+	max-width: 138px;
+	text-align: left;
 
 	@media (min-width: $tablet-width) {
 		font-size: 16px;
 		line-height: 20px;
 		text-align: right;
+		max-width: 168px;
 	}
 
 	@media (min-width: $desktop-width) {
 		display: inline-block;
-		max-width: 157px;
+		max-width: 172px;
 		text-align: left;
+	}
+}
+
+.page__body--catalog .location-address__description-address {
+	@media (min-width: $desktop-width) {
+		font-size: 17px;
+	}
+}
+
+.location-address__description-address-city {
+	@media (min-width: $tablet-width) {
+		display: block;
+		margin-top: 20px;
 	}
 }

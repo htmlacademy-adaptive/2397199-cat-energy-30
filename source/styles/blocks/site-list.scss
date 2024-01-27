@@ -16,8 +16,11 @@
     justify-content: flex-end;
     background-color: transparent;
     flex-direction: row;
-    padding: 0 10px;
-    width: 504px;
+    width: 508px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 624px;
   }
 }
 
@@ -32,7 +35,7 @@
 
 .site-list__link {
   display: block;
-  padding: 22px 10px 24px 10px;
+  padding: 22px 10px 23px;
   font-family: $primary-font;
   font-size: 20px;
   font-weight: 400;
@@ -41,6 +44,7 @@
   text-transform: uppercase;
   text-decoration: none;
   border-top: 1px solid #e6e6e6;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
@@ -48,18 +52,81 @@
     border: none;
     font-size: 18px;
     line-height: 24px;
-    padding: 15px;
+    padding: 16px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 29px;
     color: #ffffff;
+
+    &:hover {
+      color: rgba( 255, 255, 255, 0.7);
+    }
+
+    &:disabled {
+      color: rgba( 255, 255, 255,0.2);
+    }
   }
 }
 
 .site-list__link--dark {
   @media (min-width: $desktop-width) {
     color: $primary-color;
+
+    &:hover {
+      color: rgba( 0, 0, 0, 0.5);
+    }
+
+    &:disabled {
+      color: rgba( 0, 0, 0,0.2);
+    }
+  }
+}
+
+.page__body--index .site-list__link--current::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 2px;
+    background-color: $bg-primary-color;
+    bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 71px;
+    background-color: #ffffff;
+  }
+}
+
+.page__body--form .site-list__link--current::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 152px;
+    height: 2px;
+    background-color: $bg-primary-color;
+    bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+
+.page__body--catalog .site-list__link--current::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 153px;
+    height: 2px;
+    background-color: $bg-primary-color;
+    bottom: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 170px;
+    bottom: 8px;
   }
 }

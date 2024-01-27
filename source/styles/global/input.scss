@@ -1,0 +1,14 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+input {
+  border: 0;
+  outline: 1px solid #e7e7e7;
+}

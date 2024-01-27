@@ -7,8 +7,39 @@
 	color: #ffffff;
 	border: none;
 	text-decoration: none;
+	cursor: pointer;
+	
+	&:hover {
+		background-color:#5EAA2F;
+	}
+
+	&:active {
+		color: rgba(255, 255, 255, 0.4);
+	}
 }
 
 .button--catalog {
 	padding: 10px 109px;
+}
+
+.button--send {
+	padding: 10px 78px;
+	display: block;
+	margin: 0 auto 21px;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+	@media (min-width: $tablet-width) {
+		padding: 14px 65px;
+		font-size: 20px;
+		line-height: 26px;
+		margin: 0 54px 60px 70px;
+		display: inline-block;
+	}
+
+	@media (min-width: $desktop-width) {
+		margin: 0 74px 79px 110px;
+		padding: 14px 208px;
+	}
 }
