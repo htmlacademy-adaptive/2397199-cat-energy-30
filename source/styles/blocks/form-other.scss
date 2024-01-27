@@ -98,11 +98,12 @@
   }
 }
 
-.form-other__input:checked:before {
+.form-other__input:checked::before {
   content: "";
   display: block;
   width: 18px;
   height: 14px;
+
   @include bg-icon(transparent, url("../../images/icons/stack.svg#tick"), 100%);
   position: absolute;
   top: 6px;

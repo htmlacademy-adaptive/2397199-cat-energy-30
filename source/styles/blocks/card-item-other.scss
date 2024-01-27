@@ -1,101 +1,102 @@
 .card-item-other {
-	padding: 24px 20px;
+  padding: 24px 20px;
 
-	@media (min-width: $tablet-width) {
-		padding: 49px 36px 37px;
-		border: 2px solid #e6e6e6;
-		align-self: flex-end;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 49px 36px 37px;
+    border: 2px solid #e6e6e6;
+    align-self: flex-end;
+  }
 
-	@media (min-width: $desktop-width) {
-		padding: 49px 36px 40px;
-	}
+  @media (min-width: $desktop-width) {
+    padding: 49px 36px 40px;
+  }
 }
 
 .card-item-other__title {
-	font-family: $primary-font;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 20px;
-	color: #222222;
-	text-transform: uppercase;
-	margin: 0;
-	margin-bottom: 8px;
-	text-align: center;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
 
-	@media (min-width: $tablet-width) {
-		font-size: 20px;
-		line-height: 24px;
-		max-width: 134px;
-		margin: 0 auto 23px;
-	}
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 134px;
+    margin: 0 auto 23px;
+  }
 
-	@media (min-width: $desktop-width) {
-		margin: 0 auto 26px;
-	}
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 26px;
+  }
 }
 
 .card-item-other__description {
-	font-family: $secondary-font;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16px;
-	color: $secondary-color;
-	margin: 0;
-	margin-bottom: 21px;
-	text-align: center;
+  font-family: $secondary-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $secondary-color;
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center;
 
-	@media (min-width: $tablet-width) {
-		font-size: 16px;
-		line-height: 18px;
-		max-width: 170px;
-		margin: 0 auto 82px;
-	}
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    max-width: 170px;
+    margin: 0 auto 82px;
+  }
 
-	@media (min-width: $desktop-width) {
-		margin: 0 auto 89px;
-	}
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 89px;
+  }
 }
 
 .card-item-other__title-add::before {
-	content: "";
-	display: block;
-	width: 30px;
-	height: 30px;
-	margin: 0 auto 23px;
-	@include bg-icon(transparent, url("../../images/icons/stack.svg#plus"), 100%);
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 23px;
 
-	@media (min-width: $tablet-width) {
-		width: 60px;
-		height: 60px;
-		margin: 0 auto 50px;
-	}
+  @include bg-icon(transparent, url("../../images/icons/stack.svg#plus"), 100%);
 
-	@media (min-width: $desktop-width) {
-		margin: 0 auto 40px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 40px;
+  }
 }
 
 .card-item-other__button {
-	background-color: $third-color;
-	text-transform: uppercase;
-	padding: 10px 95px;
-	color: #444444;
+  background-color: $third-color;
+  text-transform: uppercase;
+  padding: 10px 95px;
+  color: #444444;
 
-	&:hover {
-		background-color:#ebebeb;
-	}
+  &:hover {
+    background-color: #ebebeb;
+  }
 
-	&:active {
-		background-color:#ebebeb;
-		color: $primary-color;
-	}
+  &:active {
+    background-color: #ebebeb;
+    color: $primary-color;
+  }
 
-	@media (min-width: $tablet-width) {
-		padding: 10px 80px;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 10px 80px;
+  }
 
-	@media (min-width: $desktop-width) {
-		padding: 10px 39px;
-	}
+  @media (min-width: $desktop-width) {
+    padding: 10px 39px;
+  }
 }

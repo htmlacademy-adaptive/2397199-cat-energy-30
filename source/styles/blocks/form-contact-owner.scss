@@ -1,186 +1,186 @@
 .form-contact-owner {
-	border: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .form-contact-owner__title {
-	font-family: $primary-font;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 26px;
-	color: $primary-color;
-	background-color: #ffffff;
-	max-width: 200px;
-	margin: 0;
-	margin-bottom: 35px;
-	padding: 27px 8px 0 20px;
-	position: relative;
-	z-index: 1;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $primary-color;
+  background-color: #ffffff;
+  max-width: 200px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 27px 8px 0 20px;
+  position: relative;
+  z-index: 1;
 
-	@media (min-width: $tablet-width) {
-		font-size: 36px;
-		line-height: 36px;
-		padding: 0 40px;
-		width: fit-content;
-		max-width: 515px;
-		margin: 0 0 76px 30px;
-	}
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    width: fit-content;
+    max-width: 515px;
+    margin: 0 0 76px 30px;
+  }
 
-	@media (min-width: $desktop-width) {
-		margin: 70px 0 74px 70px;
-	}
+  @media (min-width: $desktop-width) {
+    margin: 70px 0 74px 70px;
+  }
 }
 
 .form-contact-owner__list {
-	list-style-type: none;
-	margin: 0;
-	padding: 0 20px 26px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 26px;
 
-	@media (min-width: $tablet-width) {
-		padding: 0 70px 65px;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 65px;
+  }
 
-	@media (min-width: $desktop-width) {
-		display: flex;
-		flex-wrap: wrap;
-		column-gap: 85px;
-		padding: 0 110px 53px;
-	}
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 85px;
+    padding: 0 110px 53px;
+  }
 }
 
 .form-contact-owner__item:not(:last-child) {
-	margin-bottom: 19px;
+  margin-bottom: 19px;
 
-	@media (min-width: $tablet-width) {
-		margin-bottom: 16px;
-	}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
 }
 
 .form-contact-owner__label {
-	font-family: $primary-font;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 18px;
-	color: $secondary-color;
-	text-transform: uppercase;
-	position: relative;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  position: relative;
 
-	@media (min-width: $tablet-width) {
-		font-size: 20px;
-		line-height: 30px;
-	}
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-contact-owner__input {
-	font-family: $primary-font;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 18px;
-	color: $secondary-color;
-	text-transform: uppercase;
-	margin-left: 13px;
-	padding: 12px 13px 11px 12px;
-	height: 18px;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-left: 13px;
+  padding: 12px 13px 11px 12px;
+  height: 18px;
 
-	&:hover + .form-contact-owner__icon {
-		background-color: #222222;
-		transition: background-color 0.2s linear;
+  &:hover + .form-contact-owner__icon {
+    background-color: #222222;
+    transition: background-color 0.2s linear;
   }
 
-	&:focus-visible {
-		outline: 1px solid #444444;
-		transition: outline 0.2s linear;
+  &:focus-visible {
+    outline: 1px solid #444444;
+    transition: outline 0.2s linear;
   }
 
-	&:focus-visible + .form-contact-owner__icon {
-		background-color: $bg-primary-color;
-		transition: background-color 0.2s linear;
+  &:focus-visible + .form-contact-owner__icon {
+    background-color: $bg-primary-color;
+    transition: background-color 0.2s linear;
   }
 
   &:invalid:not(:placeholder-shown) {
-		outline: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
   }
 
   &:invalid:not(:placeholder-shown) + .form-contact-owner__icon {
-		background-color: #ff8282;
-		transition: background-color 0.2s linear;
+    background-color: #ff8282;
+    transition: background-color 0.2s linear;
   }
 
-	@media (min-width: $tablet-width) {
-		padding: 10px 20px 10px 17px;
-		font-size: 20px;
-		line-height: 30px;
-		height: 33px;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px 10px 17px;
+    font-size: 20px;
+    line-height: 30px;
+    height: 33px;
+  }
 }
 
 .form-contact-owner__input--email {
-	width: 186px;
+  width: 186px;
 
-	@media (min-width: $tablet-width) {
-		width: 506px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 506px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 448px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 448px;
+  }
 }
 
 .form-contact-owner__input--tel {
-	width: 169px;
+  width: 169px;
 
-	@media (min-width: $tablet-width) {
-		width: 485px;
-	}
+  @media (min-width: $tablet-width) {
+    width: 485px;
+  }
 
-	@media (min-width: $desktop-width) {
-		width: 427px;
-	}
+  @media (min-width: $desktop-width) {
+    width: 427px;
+  }
 }
 
 .form-contact-owner__icon {
-	position: absolute;
-	top: 50%;
-	right: 9px;
-	transform: translateY(-50%);
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	transition: background-color 0.2s linear;
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.2s linear;
 }
 
 .form-contact-owner__icon--email {
-	mask-image: url("../../images/icons/stack.svg#letter");
-	mask-position: center;
-	mask-repeat: no-repeat;
-	mask-size: 20px 20px;
-	background-color: $primary-color;
+  mask-image: url("../../images/icons/stack.svg#letter");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: $primary-color;
 }
 
 .form-contact-owner__icon--tel {
-	mask-image: url("../../images/icons/stack.svg#telephone");
-	mask-position: center;
-	mask-repeat: no-repeat;
-	mask-size: 20px 20px;
-	background-color: $primary-color;
+  mask-image: url("../../images/icons/stack.svg#telephone");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: $primary-color;
 }
 
 .form-contact-owner::before {
-	content: "";
-	position: absolute;
-	top: 40px;
-	right: 0;
-	width: 100%;
-	height: 2px;
-	background-color: $bg-primary-color;
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $bg-primary-color;
 
-	@media (min-width: $tablet-width) {
-		top: 21px;
-	}
+  @media (min-width: $tablet-width) {
+    top: 21px;
+  }
 
-	@media (min-width: $desktop-width) {
-		top: 92px;
-	}
+  @media (min-width: $desktop-width) {
+    top: 92px;
+  }
 }

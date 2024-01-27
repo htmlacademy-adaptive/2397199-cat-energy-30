@@ -1,9 +1,9 @@
 .logo {
-	display: block;
-	text-align: center;
-	padding: 19px 0;
+  display: block;
+  text-align: center;
+  padding: 19px 0;
 
-	@media (min-width: $tablet-width) {
-		padding: 0;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
