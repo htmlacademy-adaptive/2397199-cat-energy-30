@@ -18,6 +18,7 @@ table {
     border-bottom: 1px solid #cdcdcd;
     justify-content: space-between;
     padding-bottom: 3px;
+    column-gap: 15px;
   }
 
   @media (min-width: $desktop-width) {

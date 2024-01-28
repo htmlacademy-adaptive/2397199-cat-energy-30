@@ -1,16 +1,11 @@
 .location-address {
   font-style: normal;
-  display: flex;
-  flex-wrap: wrap;
   padding: 26px 20px;
-  max-width: 280px;
   margin: 0 auto;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
     padding: 59px 70px;
-    max-width: 628px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +17,49 @@
     background-color: #ffffff;
     left: 110px;
     top: 95px;
+    height: 81px;
+    overflow: auto;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: #ffffff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #a3bcb1;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+  }
+
+  &::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+    column-gap: 79px;
+  }
+}
+
+.location-address__container {
+  display: flex;
+  max-width: 280px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    max-width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: normal;
+    column-gap: 79px;
+    max-width: 628px;
   }
 }
 
