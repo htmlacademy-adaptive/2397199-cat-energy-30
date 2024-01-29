@@ -1,17 +1,17 @@
 @mixin font-face($font-family,$font-weight,$font-style, $font-src) {
-	@font-face {
-		font-family: $font-family;
-		font-weight: $font-weight;
-		font-style: $font-style;
-		src: $font-src;
-		font-display: swap;
-	}
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $font-src;
+    font-display: swap;
+  }
 }
 
 @mixin bg-icon($bg-color: #68b738, $bg-image, $bg-size: 30px 32px) {
-	background-color: $bg-color;
-	background-image: $bg-image;
-	background-repeat: no-repeat;
-	background-size: $bg-size;
-	background-position: center;
+  background-color: $bg-color;
+  background-image: $bg-image;
+  background-repeat: no-repeat;
+  background-size: $bg-size;
+  background-position: center;
 }

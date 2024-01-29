@@ -1,39 +1,33 @@
 .social-list {
   list-style-type: none;
-	padding: 20px 0 7px;
-	margin: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 24px;
-	border-top: 1px solid #d9d9d9;
-	border-bottom: 1px solid #d9d9d9;
+  padding: 20px 0 7px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
-	@media (min-width: $tablet-width) {
-		padding: 10px 0 0 35px;
-		border: none;
-	}
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px 0 57px;
+    border: none;
+  }
 }
 
 .social-list__link {
-	display: inline-block;
-	width: 30px;
-	height: 28px;
+  display: inline-block;
+  width: 30px;
+  height: 28px;
 }
 
 .social-list__link::before {
-	content:'';
+  content: "";
   display: block;
   mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
   mask-position: center;
-  -webkit-mask-position: center;
   mask-size: contain;
-  -webkit-mask-size: contain;
   background-color: #666666;
-  -webkit-transition: background 250ms ease-in-out;
-  -moz-transition: background 250ms ease-in-out;
-  -o-transition: background 250ms ease-in-out;
   transition: background 250ms ease-in-out;
 }
 
@@ -46,25 +40,22 @@
 }
 
 .social-list__link--vk::before {
-	mask-image: url("../../images/icons/stack.svg#vk");
-  -webkit-mask-image: url("../../images/icons/stack.svg#vk");
-	width: 27px;
-	height: 17px;
-	margin-left: 4px;
+  mask-image: url("../../images/icons/stack.svg#vk");
+  width: 27px;
+  height: 17px;
+  margin-left: 4px;
 }
 
 .social-list__link--youtube::before {
-	mask-image: url("../../images/icons/stack.svg#youtube");
-  -webkit-mask-image: url("../../images/icons/stack.svg#youtube");
-	width: 24px;
-	height: 19px;
-	margin-left: 4px;
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  width: 24px;
+  height: 19px;
+  margin-left: 4px;
 }
 
 .social-list__link--telegram::before {
-	mask-image: url("../../images/icons/stack.svg#telegramm");
-  -webkit-mask-image: url("../../images/icons/stack.svg#telegramm");
-	width: 20px;
-	height: 17px;
-	margin-left: 4px;
+  mask-image: url("../../images/icons/stack.svg#telegramm");
+  width: 20px;
+  height: 17px;
+  margin-left: 4px;
 }

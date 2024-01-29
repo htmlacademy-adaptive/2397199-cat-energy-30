@@ -72,7 +72,7 @@
   }
 }
 
-.advantages__item:before {
+.advantages__item::before {
   @media (min-width: $tablet-width) {
     counter-increment: advantages-item;
     content: counter(advantages-item);
@@ -134,6 +134,7 @@
   margin-left: 3px;
   width: 25px;
   height: 28px;
+
   @include bg-icon(transparent, url("../../images/icons/stack.svg#sheet"), 100%);
 }
 
@@ -143,6 +144,7 @@
   margin-left: 3px;
   width: 26px;
   height: 29px;
+
   @include bg-icon(transparent, url("../../images/icons/stack.svg#glass-of-water"), 100%);
 }
 
@@ -150,8 +152,10 @@
   content: "";
   display: block;
   margin-left: 3px;
+
   width: 25px;
   height: 30px;
+
   @include bg-icon(transparent, url("../../images/icons/stack.svg#cutlery"), 100%);
 }
 
@@ -161,6 +165,6 @@
   margin-left: 3px;
   width: 26px;
   height: 31px;
+
   @include bg-icon(transparent, url("../../images/icons/stack.svg#alarm-clock"), 100%);
 }
-

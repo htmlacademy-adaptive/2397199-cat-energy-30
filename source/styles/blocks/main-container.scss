@@ -1,7 +1,7 @@
 .main-container {
   max-width: 320px;
   margin: 0 auto;
-	background-color: #ffffff;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
@@ -9,28 +9,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-		position: relative;
+    position: relative;
   }
-}
-
-.main-container--index::before {
-	@media (min-width: $desktop-width) {
-		content: "";
-		position: absolute;
-		width: 720px;
-		height: 694px;
-		right: 0;
-		top: -117px;
-		z-index: 1;
-		background-image: linear-gradient(
-				rgba(104, 183, 56, 0.85) 100%,
-				rgba(104, 183, 56, 0.85) 100%
-			),
-			image-set(
-				url("../../images/index/index-background-desktop@1x.jpg") 1x,
-				url("../../images/index/index-background-desktop@2x.jpg") 2x
-			);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 }

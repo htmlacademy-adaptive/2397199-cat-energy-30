@@ -1,59 +1,60 @@
 .card-table {
-	@media (min-width: $tablet-width) {
-		border-collapse: collapse;
-	}
+  @media (min-width: $tablet-width) {
+    border-collapse: collapse;
+  }
 }
 
 table {
-	border-spacing: 0;
+  border-spacing: 0;
 
-	@media (min-width: $tablet-width) {
-		border-spacing: 2px;
-	}
+  @media (min-width: $tablet-width) {
+    border-spacing: 2px;
+  }
 }
 
 .card-table__stitch {
-	@media (min-width: $tablet-width) {
-		display: flex;
-		border-bottom: 1px solid #cdcdcd;
-		justify-content: space-between;
-		padding-bottom: 3px;
-	}
+  @media (min-width: $tablet-width) {
+    display: flex;
+    border-bottom: 1px solid #cdcdcd;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    column-gap: 15px;
+  }
 
-	@media (min-width: $desktop-width) {
-		padding-bottom: 4px;
-	}
+  @media (min-width: $desktop-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .card-table__stitch:not(:last-child) {
-	@media (min-width: $tablet-width) {
-		margin-bottom: 6px;
-	}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .card-table__parametr {
-	font-family: $secondary-font;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16px;
-	color: $secondary-color;
+  font-family: $secondary-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $secondary-color;
 
-	@media (min-width: $tablet-width) {
-		font-size: 16px;
-		line-height: 20px;
-	}
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .card-table__value {
-	font-family: $secondary-font;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 16px;
-	color: $secondary-color;
-	text-align: right;
+  font-family: $secondary-font;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $secondary-color;
+  text-align: right;
 
-	@media (min-width: $tablet-width) {
-		font-size: 16px;
-		line-height: 20px;
-	}
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
