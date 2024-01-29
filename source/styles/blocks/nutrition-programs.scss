@@ -139,9 +139,13 @@
 }
 
 .nutrition-programs__link {
-  display: inline-block;
-  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 17px;
   padding: 10px 0 12px;
+  width: fit-content;
   margin-left: 20px;
   font-family: $primary-font;
   font-size: 16px;
@@ -164,22 +168,24 @@
     grid-column: 1;
     padding: 12px 0 10px;
     margin: 0;
+    column-gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 49px;
+    grid-template-columns: 107px 49px;
     align-items: center;
     padding: 6px 3px 10px;
     margin: 0;
     grid-column: 1;
     grid-row: 3/4;
+    column-gap: 23px;
   }
 }
 
 .nutrition-programs__link-mass {
   @media (min-width: $desktop-width) {
     margin-left: 13px;
+    column-gap: 21px;
   }
 }
 
@@ -250,58 +256,26 @@
 .nutrition-programs__link--arrow::after {
   content: "";
   display: inline-block;
-  margin-left: 13px;
-  width: 32px;
+  width: 24px;
   height: 12px;
+  grid-column: 2;
+  grid-row: 1;
 
   @include bg-icon(transparent, url("../../images/icons/stack.svg#arrow"), 100%);
 
-  @media (min-width: $tablet-width) {
-    grid-column: 1;
-    margin-left: 23px;
-  }
-
   @media (min-width: $desktop-width) {
     grid-column: 2;
-    grid-row: 1/2;
-    margin-left: 17px;
-  }
-}
-
-.nutrition-programs__link-mass::after {
-  @media (min-width: $desktop-width) {
-    margin-left: 21px;
+    grid-row: 1;
   }
 }
 
 .nutrition-programs__link--arrow::before {
   content: "";
-  position: absolute;
   height: 2px;
   width: 15px;
   background-color: #131313;
-  top: 18px;
-  left: 109px;
-
-  @media (min-width: $tablet-width) {
-    left: 134px;
-    top: 29px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 131px;
-    top: 20px;
-  }
-}
-
-.nutrition-programs__link--before::before {
-  left: 105px;
-
-  @media (min-width: $tablet-width) {
-    left: 129px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 130px;
-  }
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: flex-start;
 }
