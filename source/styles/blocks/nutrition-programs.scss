@@ -38,6 +38,7 @@
     grid-template-columns: 167px 1fr;
     max-width: 570px;
     padding: 41px 52px 55px;
+    margin-bottom: 23px;
   }
 }
 
@@ -47,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 23px;
   }
 }
 
