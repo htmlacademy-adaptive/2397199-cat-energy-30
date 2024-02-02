@@ -9,11 +9,14 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap" rel="preload" as="font">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body page__body--index">
     <header class="main-header">
-      <a href="#" class="main-header__logo">
+      <a class="main-header__logo" href="#">
         <picture>
           <source type="image/svg+xml" width="70" height="59" srcset="images/logo/logo-cat-desktop.svg" media="(min-width: 1440px)">
           <source type="image/svg+xml" width="60" height="50" srcset="images/logo/logo-cat-tablet.svg" media="(min-width: 768px)">
@@ -27,13 +30,13 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="#" class="site-list__link site-list__link--current">Главная</a>
+            <a class="site-list__link site-list__link--current" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__link">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -60,12 +63,12 @@
           <li class="nutrition-programs__item nutrition-programs__item--slim">
             <h3 class="nutrition-programs__title">Похудение</h3>
             <p class="nutrition-programs__description text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="nutrition-programs__link nutrition-programs__link--arrow">Каталог slim</a>
+            <a class="nutrition-programs__link nutrition-programs__link--arrow" href="#">Каталог slim</a>
           </li>
           <li class="nutrition-programs__item nutrition-programs__item--mass">
             <h3 class="nutrition-programs__title nutrition-programs__title--mass">Набор массы</h3>
             <p class="nutrition-programs__description nutrition-programs__description--mass text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a href="#" class="nutrition-programs__link nutrition-programs__link-mass nutrition-programs__link--arrow nutrition-programs__link--before">Каталог pro</a>
+            <a class="nutrition-programs__link nutrition-programs__link-mass nutrition-programs__link--arrow nutrition-programs__link--before" href="#">Каталог pro</a>
           </li>
         </ul>
       </section>
@@ -148,27 +151,27 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="#" class="logo">
+      <a class="logo" href="#">
         <img class="footer__logo-text" src="images/logo/logo-text.svg" loading="lazy" width="128" height="24" alt="Логотип компании Cat Energy">
       </a>
       <ul class="social-list">
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--vk">
+          <a class="social-list__link social-list__link--vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--youtube">
+          <a class="social-list__link social-list__link--youtube" href="#">
             <span class="visually-hidden">YouTube</span>
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" class="social-list__link social-list__link--telegram">
+          <a class="social-list__link social-list__link--telegram" href="#">
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
       </ul>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__logo-link">
+      <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="footer__logo-link-description">HTML Academy</span>
       </a>
     </footer>
